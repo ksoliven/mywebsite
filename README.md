@@ -1,7 +1,7 @@
 # My portfolio website
 
 <p align="center">
-  <a href="https://katedevdc.com/"><img src="images/Logo2.png"></a>
+  <a href="https://katedevdc.com/"><img src="images/Logo2.png" height="250px"></a>
 </p>
                            
 It's a portfolio website encoded in CSS, HTML, Javascript, Bootstrap, and JQuery. It's based off of the Colorlib templates and uses an internal icon library.
