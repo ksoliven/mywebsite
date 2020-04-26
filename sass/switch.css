@@ -1,0 +1,11 @@
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+}
+/*# sourceMappingURL=switch.css.map */
