@@ -17,7 +17,7 @@ It's a portfolio website encoded in CSS, HTML, Javascript, Bootstrap, and JQuery
 ## Graphic Programs Used:
 
 * [Adobe PS](https://www.adobe.com/products/photoshop.html?sdid=KKQIN&mv=search&s_kwcid=AL!3085!10!79027473338355!20541714965&ef_id=XNC0kQAAAH1MVjCs:20200303011500:s) - Adobe Photoshop
-* [Adobe IS](https://www.adobe.com/products/illustrator.html?sdid=KKQML&mv=search&s_kwcid=AL!3085!10!79645985794438!20541717517&ef_id=XNC0kQAAAH1MVjCs:20200303011600:s) - Adobe Illustrator
+* [Adobe AI](https://www.adobe.com/products/illustrator.html?sdid=KKQML&mv=search&s_kwcid=AL!3085!10!79645985794438!20541717517&ef_id=XNC0kQAAAH1MVjCs:20200303011600:s) - Adobe Illustrator
 
 ## Wireframe Used:
 
