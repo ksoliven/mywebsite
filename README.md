@@ -41,6 +41,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-# Changes - 1/2021
-* applied Cloudflare to the website
-* added certifications section
+# Changes - 10/2021
+* updated background picture and fixed a contact bug
+
+# Todos
+* will need to update skill section to account for Dev Ops and Kibana experience
