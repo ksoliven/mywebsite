@@ -41,8 +41,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-# Changes - 10/2021
-* updated background picture and fixed a contact bug
+# Changes - 04/2022
+* updated skill section for dev ops, data ingest, and elastic skills 
 
 # Todos
-* will need to update skill section to account for Dev Ops and Kibana experience
+* will need to update an internal scrolling for projects and a link for a personal project
