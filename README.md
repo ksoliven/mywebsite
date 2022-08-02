@@ -41,8 +41,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-# Changes - 04/2022
-* updated skill section for dev ops, data ingest, and elastic skills 
+# Changes - 08/2022
+* updated certification section to account for my new AWS certification through the She Builds program
+* updated project numbers
 
 # Todos
 * will need to update an internal scrolling for projects and a link for a personal project
