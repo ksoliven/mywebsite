@@ -44,6 +44,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 # Changes - 08/2022
 * updated certification section to account for my new AWS certification through the She Builds program
 * updated project numbers
+* removed the form due to a 405 error
+* updated my website to use my updated resume
 
 # Todos
 * will need to update an internal scrolling for projects and a link for a personal project
