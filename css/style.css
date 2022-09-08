@@ -530,6 +530,8 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-work,
 .colorlib-about,
 .colorlib-services,
+.colorlib-certifications,
+.colorlib-references,
 .colorlib-contact {
   padding-top: 4em;
   padding-bottom: 9em;
@@ -547,6 +549,8 @@ body.offcanvas .colorlib-nav-toggle {
   .colorlib-work,
   .colorlib-about,
   .colorlib-services,
+  .colorlib-references,
+  .colorlib-certifications,
   .colorlib-contact {
     padding-top: 5em;
     padding-bottom: 8em;
@@ -1543,6 +1547,12 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-social li a:hover,
 .colorlib-social li a:active,
 .colorlib-social li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #2c98f0;
+}
+
+.colorlib-contact li a:active {
   outline: none;
   text-decoration: none;
   color: #2c98f0;

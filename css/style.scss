@@ -524,6 +524,8 @@ body {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
+.colorlib-certifications,
+.colorlib-references,
 .colorlib-services,
 .colorlib-contact{
 	padding-top: 4em;
@@ -1375,7 +1377,6 @@ margin-left: -20px;
 	}
 }
 
-
 .colorlib-social {
 	padding: 0;
 	margin: 0;
@@ -1404,6 +1405,10 @@ margin-left: -20px;
 			}
 		}
 	}
+}
+
+.li #contact :active {
+	color: $brand-primary;
 }
 
 

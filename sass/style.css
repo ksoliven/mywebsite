@@ -491,6 +491,8 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
+.colorlib-references,
+.colorlib-certifications,
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
@@ -508,6 +510,8 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   .colorlib-work,
   .colorlib-about,
   .colorlib-services,
+  .colorlib-references,
+  .colorlib-certifications,
   .colorlib-contact {
     padding-top: 5em;
     padding-bottom: 8em;
