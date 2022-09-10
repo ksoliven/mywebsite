@@ -174,7 +174,7 @@
 		var $el = $('#navbar > ul');
 		$el.find('li').removeClass('active');
 		$el.each(function(){
-			$(this).find('a[data-nav-section="'+section+'"]').closest('li').addClass('active');
+			$(this).find('a[data-nav-section="'+ section +'"]').closest('li').addClass('active');
 		});
 
 	};
