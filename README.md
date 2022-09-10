@@ -41,11 +41,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-# Changes - 08/2022
-* updated certification section to account for my new AWS certification through the She Builds program
-* updated project numbers
-* removed the form due to a 405 error
-* updated my website to use my updated resume
+# Changes - 09/2022
+* Enabled Captcha for contact form
+* Imported EmailJS to work with contact form to kick form to my professional email
+* Implemented VanillaToast to produce success and failure toasts (because I loathe alert boxes with a passion 😡) for the contact form 
+    * will likely change the layout for this feature
+* Added Miro board to skills since I used to use it to track dependencies and tickets
 
 # Todos
 * will need to update an internal scrolling for projects and a link for a personal project
+* 🤯 need to make another website for non-professional dev work - Raspberry Pi, SteamDeck UI enhancements, Scripting, and public API work
