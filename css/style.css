@@ -1302,6 +1302,10 @@ body.offcanvas .colorlib-nav-toggle {
   color: #2c98f0;
 }
 
+textarea {
+  resize: none;
+}
+
 .project {
   background-size: cover;
   background-position: center center;
