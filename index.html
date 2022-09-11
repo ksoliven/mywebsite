@@ -70,6 +70,7 @@
 							fadeDuration: 400
 						});
 						document.getElementById('contact-form').reset();
+						grecaptcha.reset();
 						console.log('SUCCESS!');
 					}, function (error) {
 						vanillaToast.error(
