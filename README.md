@@ -41,9 +41,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 12/2022
+## Changes - 04/2023
 
-* Updated projects to demonstrate my advanced SASS and CSS skills
+* Updated work history due to entering a new contract 
 
 ## Todos
 
