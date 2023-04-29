@@ -44,6 +44,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Changes - 04/2023
 
 * Updated work history due to entering a new contract 
+* Added QR functionality
 
 ## Todos
 
