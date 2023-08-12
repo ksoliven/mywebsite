@@ -41,10 +41,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 04/2023
+## Changes - 08/2023
 
-* Updated work history due to entering a new contract 
-* Added QR functionality
+* Updated my re-certification for Security+
 
 ## Todos
 
