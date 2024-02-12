@@ -41,12 +41,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 08/2023
+## Changes - 02/2024
 
-* Updated my re-certification for Security+
+* Added experience with Space Force
 
 ## Todos
 
-* 🤯 need to make another website for non-professional dev work - Raspberry Pi, SteamDeck UI enhancements, Scripting, and public API work
-* Will need to update the portfolio section some more for my React, Angular, and RUST projects
-* Currently working on a React project for a client and a Unity project (will need to upload when that's done)
+* Will need to update the portfolio section with some more of my React, Angular, and RUST projects
+* Currently in process of developing a portfolio website for a client and a landing site for an Instagram profile.
