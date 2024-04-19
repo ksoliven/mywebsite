@@ -42,8 +42,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Switch Icons -->
 	<link rel="stylesheet" href="css/switch.css">
-	<!-- Vanilla toast css -->
-	<link rel="stylesheet" type="text/css" href="css/vanilla-toast.css">
+	<!-- Awesome notifications css -->
+	<link rel="stylesheet" type="text/css" href="css/awesome.css">
 	<!-- Switch Icon API-->
 	<script src="https://kit.fontawesome.com/9680114bd9.js" crossorigin="anonymous"></script>
 	<!-- Captcha -->
@@ -65,21 +65,16 @@
 				// these IDs from the previous steps
 				emailjs.sendForm('service_dehzxyh', 'template_7ac8jmp', this)
 					.then(function () {
-						vanillaToast.success('Message successfully sent', {
-							duration: 2000,
-							fadeDuration: 400
+						new AWN().success('Message successfully sent', {
+							durations: { success: 2000 }
 						});
 						document.getElementById('contact-form').reset();
 						grecaptcha.reset();
-						console.log('SUCCESS!');
 					}, function (error) {
-						vanillaToast.error(
+					new AWN().alert(
 							'Message failure. Please contact me by phone or email instead. Thank you', {
-								duration: 1000,
-								fadeDuration: 300,
-								closeButton: false
+								duration: { alert: 2000 }
 							});
-						console.log('FAILED...', error);
 					});
 			});
 		}
@@ -1748,7 +1743,7 @@
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
 	<!-- Vanilla toast js -->
-	<script src="js/vanilla-toast.js"></script>
+	<script src="js/index.var.js"></script>
 
 </body>
 
