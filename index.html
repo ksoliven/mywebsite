@@ -46,14 +46,12 @@
 	<link rel="stylesheet" type="text/css" href="css/awesome.css">
 	<!-- Switch Icon API-->
 	<script src="https://kit.fontawesome.com/9680114bd9.js" crossorigin="anonymous"></script>
-	<!-- Captcha -->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- Emailjs integration -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
 		(function () {
 			// https://dashboard.emailjs.com/admin/account
-			emailjs.init('W96TxgqkIJiF9QRMc');
+			emailjs.init('iSPaNrHIO21mz9-u3');
 		})();
 	</script>
 	<script type="text/javascript">
@@ -63,7 +61,7 @@
 				// generate a five digit number for the contact_number variable
 				this.contact_number.value = Math.random() * 100000 | 0;
 				// these IDs from the previous steps
-				emailjs.sendForm('service_dehzxyh', 'template_7ac8jmp', this)
+				emailjs.sendForm('service_nzt1uxp', 'template_fbzuim3', this)
 					.then(function () {
 						new AWN().success('Message successfully sent', {
 							durations: { success: 2000 }
@@ -1710,7 +1708,7 @@
 											</div>
 											<!-- Captcha needs to implemented here as it's an outer div -->
 											<div class="g-recaptcha"
-												data-sitekey="6LcdtughAAAAAAUkgAF9Ul31zLvVhVpobd-SKjaw"></div>
+												data-sitekey="6LcP1cApAAAAAPOX01gNTbOXqKM_mzJlJOPDDJB8"></div>
 										</form>
 									</div>
 
@@ -1744,6 +1742,8 @@
 	<script src="js/main.js"></script>
 	<!-- Vanilla toast js -->
 	<script src="js/index.var.js"></script>
+	<!-- Captcha -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 
