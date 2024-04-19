@@ -36,9 +36,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 02/2024
+## Changes - 04/2024
 
-* Added experience with Space Force
+* Updated resume
+* Removed Vanilla Toasts
+* Added [Awesome Notifications](https://f3oall.github.io/awesome-notifications/docs/) in lieu of Vanilla Toasts
+* Updated EmailJS library 
+* Fixed a bug with toast connection with Captcha
 
 ## Todos
 
