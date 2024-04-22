@@ -529,6 +529,7 @@ body.offcanvas .colorlib-nav-toggle {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
+.colorlib-clients,
 .colorlib-services,
 .colorlib-certifications,
 .colorlib-references,
@@ -1521,7 +1522,7 @@ textarea {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .colorlib-social li a {
@@ -1531,7 +1532,7 @@ textarea {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -1874,7 +1875,7 @@ textarea {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 30px;
   height: 2px;
   color: #000;

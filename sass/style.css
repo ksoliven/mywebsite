@@ -491,6 +491,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
 .colorlib-blog,
 .colorlib-work,
 .colorlib-about,
+.colorlib-clients,
 .colorlib-references,
 .colorlib-certifications,
 .colorlib-services,
@@ -1437,7 +1438,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .colorlib-social li a {
@@ -1447,7 +1448,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   border-radius: 7px;
 }
 
@@ -1733,7 +1734,7 @@ body.offcanvas #colorlib-main, body.offcanvas .colorlib-nav-toggle {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 30px;
   height: 2px;
   color: #000;
