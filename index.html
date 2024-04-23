@@ -64,14 +64,14 @@
 				emailjs.sendForm('service_nzt1uxp', 'template_fbzuim3', this)
 					.then(function () {
 						new AWN().success('Message successfully sent', {
-							durations: { success: 2000 }
+							durations: { success: 1000 }
 						});
 						document.getElementById('contact-form').reset();
 						grecaptcha.reset();
 					}, function (error) {
 					new AWN().alert(
 							'Message failure. Please contact me by phone or email instead. Thank you', {
-								duration: { alert: 2000 }
+								duration: { alert: 1000 }
 							});
 					});
 			});
@@ -104,8 +104,8 @@
 						<ul>
 							<li class="active"><a id="home" href="#" data-nav-section="home">Home</a></li>
 							<li><a id="about" href="#" data-nav-section="about">About</a></li>
-							<li><a id="clients" href="#" data-nav-section="clients">Clients</a></li>
 							<li><a id="services" href="#" data-nav-section="services">Services</a></li>
+							<li><a id="clients" href="#" data-nav-section="clients">Clients</a></li>
 							<li><a id="skills" href="#" data-nav-section="skills">Skills</a></li>
 							<li><a id="education" href="#" data-nav-section="education">Education</a></li>
 							<li><a id="certifications" href="#" data-nav-section="certifications">Certifications</a>
@@ -230,21 +230,6 @@
 					</div>
 				</section>
 
-				<section class="colorlib-clients" data-section="clients">
-					<div class="colorlib-narrow-content">
-							<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
-								<div class="row">
-									<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-										<span class="heading-meta">My clients</span>
-										<h2 class="colorlib-heading">Clients supported</h2>
-										<img src="images/clients.png" style="max-width: 750px; margin-bottom: 100px;">
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
-
-
 				<section class="colorlib-services" data-section="services">
 					<div class="colorlib-narrow-content">
 						<div class="row">
@@ -324,6 +309,21 @@
 						</div>
 					</div>
 				</section>
+
+				<section class="colorlib-clients" data-section="clients">
+					<div class="colorlib-narrow-content">
+						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+							<div class="row">
+								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+									<span class="heading-meta">My clients</span>
+									<h2 class="colorlib-heading">Clients supported</h2>
+									<img src="images/clients.png" style="max-width: 750px; margin-bottom: 100px;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
 				<!-- Commented this out will return to further refine this -->
 <!-- 
 				<div id="colorlib-counter" class="colorlib-counters"
@@ -363,7 +363,7 @@
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<span class="heading-meta">My Specialty</span>
-								<h2 class="colorlib-heading animate-box">My Skills</h2>
+								<h2 class="colorlib-heading animate-box">Skills</h2>
 							</div>
 						</div>
 						<div class="row">
@@ -1066,7 +1066,7 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
+								<span class="heading-meta">My education</span>
 								<h2 class="colorlib-heading animate-box">Education</h2>
 							</div>
 						</div>
@@ -1205,7 +1205,7 @@
 						<div class="row">
 							<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Certifications</span>
+								<span class="heading-meta">My certifications</span>
 								<h2 class="colorlib-heading animate-box">Professional certifications</h2>
 							</div>
 						</div>
@@ -1243,7 +1243,7 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Experience</span>
+								<span class="heading-meta">My experience</span>
 								<h2 class="colorlib-heading animate-box">Work Experience</h2>
 							</div>
 						</div>
@@ -1470,10 +1470,10 @@
 				<section class="colorlib-references" data-section="references">
 					<div class="colorlib-narrow-content">
 						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+							<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">References</span>
-								<h2 class="colorlib-heading animate-box">My References</h2>
+								<span class="heading-meta">My references</span>
+								<h2 class="colorlib-heading animate-box">Academic and Professional</h2>
 							</div>
 						</div>
 						<div class="row">
