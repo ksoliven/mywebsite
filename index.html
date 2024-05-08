@@ -64,14 +64,18 @@
 				emailjs.sendForm('service_nzt1uxp', 'template_fbzuim3', this)
 					.then(function () {
 						new AWN().success('Message successfully sent', {
-							durations: { success: 1000 }
+							durations: {
+								success: 1000
+							}
 						});
 						document.getElementById('contact-form').reset();
 						grecaptcha.reset();
 					}, function (error) {
-					new AWN().alert(
+						new AWN().alert(
 							'Message failure. Please contact me by phone or email instead. Thank you', {
-								duration: { alert: 1000 }
+								duration: {
+									alert: 1000
+								}
 							});
 					});
 			});
@@ -127,10 +131,12 @@
 							</script> All rights reserved
 						</small></p>
 					<ul>
-						<li><a href="https://katedevblog.com/" target="_blank" class="social-link"><i class="icon-blogger"></i></a></li>
-						<li><a href="https://github.com/ksoliven" target="_blank" class="social-link"><i class="icon-github"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/kate-soliven-949706100" target="_blank" class="social-link"><i
-									class="icon-linkedin2"></i></a></li>
+						<li><a href="https://katedevblog.com/" target="_blank" class="social-link"><i
+									class="icon-blogger"></i></a></li>
+						<li><a href="https://github.com/ksoliven" target="_blank" class="social-link"><i
+									class="icon-github"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/kate-soliven-949706100" target="_blank"
+								class="social-link"><i class="icon-linkedin2"></i></a></li>
 					</ul>
 					<br>
 					<img src="qr/QR.png" style="width: 76px; height: 76px">
@@ -151,9 +157,8 @@
 												<div class="desc">
 													<h1>Hi!<br>I'm Kate</h1>
 													<p><a class="btn btn-primary btn-learn"
-															href="documents/ksoliven.pdf"
-															download="Resume">Download Resume&nbsp;<i
-																class="icon-download4"></i></a></p>
+															href="documents/ksoliven.pdf" download="Resume">Download
+															Resume&nbsp;<i class="icon-download4"></i></a></p>
 												</div>
 											</div>
 										</div>
@@ -312,7 +317,8 @@
 
 				<section class="colorlib-clients" data-section="clients">
 					<div class="colorlib-narrow-content">
-						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+						<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box"
+							data-animate-effect="fadeInLeft">
 							<div class="row">
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<span class="heading-meta">My clients</span>
@@ -325,7 +331,7 @@
 				</section>
 
 				<!-- Commented this out will return to further refine this -->
-<!-- 
+				<!-- 
 				<div id="colorlib-counter" class="colorlib-counters"
 					style="background-image: url(images/washingtondc_copy.jpg);" data-stellar-background-ratio="0.5">
 					<div class="overlay"></div>
@@ -367,9 +373,9 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft"> 
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<p>I have experience with Agile development as well as System Engineering. I'm currently
-									a Staff Engineer at Booz Allen Hamilton coding in Javascript, Typescript, jQuery, 
+									a Staff Engineer at Booz Allen Hamilton coding in Javascript, Typescript, jQuery,
 									Angular, and React. Check out
 									some of my skills below.</p>
 							</div>
@@ -504,17 +510,17 @@
 									</div>
 								</div>
 							</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="progress-wrap">
-										<h3>Kendo UI</h3>
-										<div class="progress">
-											<div class="progress-bar color-6" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-												aria-valuemax="100" style="width:60%">
-												<span>60%</span>
-											</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Kendo UI</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" style="width:60%">
+											<span>60%</span>
 										</div>
 									</div>
 								</div>
+							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
 									<h3>Mongoose</h3>
@@ -537,17 +543,17 @@
 									</div>
 								</div>
 							</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>SocketIO</h3>
-										<div class="progress">
-											<div class="progress-bar color-3" role="progressbar" aria-valuenow="40" aria-valuemin="0"
-												aria-valuemax="100" style="width:40%">
-												<span>40%</span>
-											</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>SocketIO</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="40"
+											aria-valuemin="0" aria-valuemax="100" style="width:40%">
+											<span>40%</span>
 										</div>
 									</div>
 								</div>
+							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
 									<h3>Yeoman</h3>
@@ -645,8 +651,8 @@
 								<div class="progress-wrap">
 									<h3>Nodejs</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100" style="width:75%">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
 									</div>
@@ -1003,17 +1009,17 @@
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<h2 class="colorlib-heading animate-box">Productivity Programs</h2>
 							</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>JIRA</h3>
-										<div class="progress">
-											<div class="progress-bar color-4" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-												aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>JIRA</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
 										</div>
 									</div>
 								</div>
+							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
 								<div class="progress-wrap">
 									<h3>Microsoft Office</h3>
@@ -1029,8 +1035,8 @@
 								<div class="progress-wrap">
 									<h3>Microsoft Teams</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-											aria-valuemax="100" style="width:80%">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
 									</div>
@@ -1048,38 +1054,38 @@
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>RocketChat</h3>
-										<div class="progress">
-											<div class="progress-bar color-2" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-												aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
+								<div class="progress-wrap">
+									<h3>RocketChat</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
 										</div>
 									</div>
 								</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-							<div class="progress-wrap">
-								<h3>Slack</h3>
-								<div class="progress">
-									<div class="progress-bar color-3" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-										aria-valuemax="100" style="width:80%">
-										<span>80%</span>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Slack</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-							<div class="progress-wrap">
-								<h3>Trello</h3>
-								<div class="progress">
-									<div class="progress-bar color-4" role="progressbar" aria-valuenow="70" aria-valuemin="0"
-										aria-valuemax="100" style="width:70%">
-										<span>70%</span>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Trello</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 						</div>
 				</section>
 				<!-- Education -->
@@ -1099,15 +1105,19 @@
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
 												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-														aria-expanded="true" aria-controls="collapseOne">Georgia Tech (2024)
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">Georgia Tech
 													</a>
 												</h4>
 											</div>
-											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="headingOne">
 												<div class="panel-body" aria-expanded="true">
-													<p>Masters in Applied Systems Engineering</p>
-													<p>Will start in August 2024</p>
+													<ul>
+														<li>Masters in Applied Systems Engineering</li>
+														<li>Will start in August 2024</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -1115,34 +1125,43 @@
 											<div class="panel-heading" role="tab" id="headingTwo">
 												<h4 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
-														href="#collapseTwo" aria-expanded="true"
-														aria-controls="collapseTwo">Introduction to Quantum Computing (2024)
+														href="#collapseTwo" aria-expanded="false"
+														aria-controls="collapseTwo">Introduction to Quantum Computing
 													</a>
 												</h4>
 											</div>
 											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingTwo">
-												<div class="panel-body" aria-expanded="true">
-															<p>Gaining a high-level understanding of quantum computing and quantum information and how it applies to the domains of cybersecurity, optimization, and more.</p>
-															<p>Understanding the basics of what it's like to program these devices.</p>
+												<div class="panel-body" aria-expanded="false">
+													<ul>
+														<li>Gained a high-level understanding of quantum computing and
+															quantum information and how it applies to
+															the domains of cybersecurity, optimization, and more.</li>
+														<li>Understood the basics of what it's like to program these
+															devices.</li>
+													</ul>
 												</div>
 											</div>
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingThree">
 												<h4 class="panel-title">
-													<a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-														aria-expanded="false" aria-controls="collapseThree">Coding Dojo (2019)
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseThree" aria-expanded="false"
+														aria-controls="collapseThree">Coding Dojo
 													</a>
 												</h4>
 											</div>
-											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="headingThree">
 												<div class="panel-body">
-													<p>Completed an intense 14 week coding bootcamp.</p>
-													<p>Learned multiple technologies such as: HTML, CSS,
+													<ul>
+														<li>Completed an intense 14 week coding bootcamp.</li>
+														<li>Learned multiple technologies such as: HTML, CSS,
 															Javascript, Angular, Nodejs, MongoDB, C#, SQL, SQLlite,
-															Razor, Python, Flask, Django, jQuery, and AJAX.</p>
-													<p>Triple Black Belt in Python, C#, and MEAN</p>
+															Razor, Python, Flask, Django, jQuery, and AJAX.</li>
+														<li>Triple Black Belt in Python, C#, and MEAN</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -1151,15 +1170,15 @@
 												<h4 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseFour" aria-expanded="false"
-														aria-controls="collapseFour">George Mason University (2014)
+														aria-controls="collapseFour">George Mason University
 													</a>
 												</h4>
 											</div>
 											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingFour">
 												<div class="panel-body">
-													<p>Certified Ethical Hacker course</p>
 													<ul>
+														<li>Certified Ethical Hacker course</li>
 														<li>Learned network methodologies to protect systems from
 															external and internal threats.</li>
 														<li>Used Linux, Kali-Linux, John the Ripper, and Wireshark to
@@ -1173,15 +1192,18 @@
 												<h4 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseFive" aria-expanded="false"
-														aria-controls="collapseFour">Dale Carnegie (2009)
+														aria-controls="collapseFour">Dale Carnegie
 													</a>
 												</h4>
 											</div>
 											<div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingFive">
 												<div class="panel-body">
-													<p>Took a strategic communications course. The course included how
-														to conduct, lead, and present in meetings.</p>
+													<ul>
+														<li>Strategic communications course</li>
+														<li>The course included how to conduct, lead, and present in
+															meetings.</li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -1190,15 +1212,15 @@
 												<h4 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseSix" aria-expanded="false"
-														aria-controls="collapseSix">Carnegie Mellon University (2009)
+														aria-controls="collapseSix">Carnegie Mellon University
 													</a>
 												</h4>
 											</div>
 											<div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingSix">
 												<div class="panel-body">
-													<p>System Engineering course</p>
 													<ul>
+														<li>Systems Engineering Course</li>
 														<li>Learned how to apply Agile development methodologies to
 															various projects.</li>
 														<li>Learned how to break down systems systematically for System
@@ -1212,20 +1234,21 @@
 												<h4 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseSeven" aria-expanded="false"
-														aria-controls="collapseSeven">George Mason University (2008)
+														aria-controls="collapseSeven">George Mason University
 													</a>
 												</h4>
 											</div>
 											<div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingSeven">
 												<div class="panel-body">
-													<p>Bachelors of Science in Decision Science and Management
-														Information Systems with a minor in Information Technology.</p>
 													<ul>
+														<li>Bachelors of Science in Decision Science and Management
+															Information Systems with a minor in Information Technology
+														</li>
 														<li>Completed 120 credit hours.</li>
 														<li>Learned system engineering, system design, system analysis,
 															and project management methodologies.</li>
-														<li>Graduated Cumlaude</li>
+														<li>Graduated Cum Laude</li>
 													</ul>
 												</div>
 											</div>
@@ -1297,16 +1320,23 @@
 											<div class="timeline-label">
 												<h2><a href="https://www.boozallen.com/">Staff Engineer at
 														Booz Allen Hamilton</a> <span>2022 - Present</span></h2>
-												<b>United States Space Force (USSF)</b>
+												<a href="https://www.spaceforce.mil/ "><b>United States Space Force
+														(USSF)</b></a>
 												<ul>
-													<li>Developed a table interface for USSF to track meeting requests for Headquarters in AngularJS.</li>
-													<li>Developed custom webparts for internal documents tracking by coding in Typescript, React, and FluentUI leveraging the SharePoint Framework (SPFx) ecosystem.</li>
+													<li>Developed a table interface for USSF to track meeting requests
+														for Headquarters in AngularJS.</li>
+													<li>Developed custom webparts for internal documents tracking by
+														coding in Typescript, React, and FluentUI leveraging the
+														SharePoint Framework (SPFx) ecosystem.</li>
 													<li>Debugged code via the SharePoint Workbench</li>
-													<li>Deployed webparts to the USSF Tenant using the Microsoft 365 Content Delivery Network (CDN)</li>
-													<li>Managed SharePoint permissions for sites and subsites for clients and team mailbox requests.</li>
+													<li>Deployed webparts to the USSF Tenant using the Microsoft 365
+														Content Delivery Network (CDN)</li>
+													<li>Managed SharePoint permissions for sites and subsites for
+														clients and team mailbox requests.</li>
 													<li>Presented Community of Practice topics for the HQSF staff.</li>
 												</ul>
-												<b>NASA</b>
+												<a href="https://www.nasa.gov/"><b>National Aeronautics and Space
+														Administration (NASA)</b></a>
 												<ul>
 													<li>Modernized legacy applications from AngularJS to Angular or
 														React in an Agile process (1 month sprints)
@@ -1318,17 +1348,21 @@
 													</li>
 													<li>Manipulated JSON data to feed into the SharePoint UI
 													</li>
-													<li>Utilized SharePoint API calls for specific permissions depending on user access (administrative tasks)
+													<li>Utilized SharePoint API calls for specific permissions depending
+														on user access (administrative tasks)
 													</li>
-													<li>Created an Admin console for the user to manage specific sites and subsites within SharePoint
+													<li>Created an Admin console for the user to manage specific sites
+														and subsites within SharePoint
 														<ul>
-														<li>Helped manage groups, lists, and libraries for the admin</li>
+															<li>Helped manage groups, lists, and libraries for the admin
+															</li>
 														</ul>
 													</li>
 													<li>Developed reusable Angular components for the SharePoint UI</li>
 													<li>Leveraged the Kendo UI Library for Excel data exports
 													</li>
-													<li>Used GitHub for source code control and linking work items back to JIRA
+													<li>Used GitHub for source code control and linking work items back
+														to JIRA
 													</li>
 													<li>Used Jira for work item management and breakdown</li>
 													<li>Participated in Daily Scrum, Sprint planning and retrospectives
@@ -1346,33 +1380,34 @@
 												<h2><a href="https://www.zekiah.com/">Full Stack Software Developer at
 														Zekiah Technologies Inc.</a> <span>2020-2022</span></h2>
 												<ul>
-													<li>Developing an application using an Angular frontend and a .NET
+													<li>Developed an application using an Angular front end and a .NET
 														backend (using a Microservice architecture)
 														in an Agile process (2 week sprints)
 													</li>
-													<li>Using Swagger to generate Restful API routes
+													<li>Used Swagger to generate Restful API routes
 													</li>
-													<li>Establish connections between multiple datasets in SQL Server
+													<li>Established connections between multiple datasets in SQL Server
 														2019
 													</li>
-													<li>Using Entity Framework Core (EF Core) for Object Relational
+													<li>Used Entity Framework Core (EF Core) for Object Relational
 														Mapping
 													</li>
-													<li>Using Azure DevOps and Git for Source Code control
+													<li>Used Azure DevOps and Git for Source Code control
 													</li>
-													<li>Unit testing using Jest and Xunit
+													<li>Contract tested using Pact Broker</li>
+													<li>Unit tested using Jest and Xunit
 													</li>
 													<li>
 														Fixed E2E tests in Cypress and Test Cafe
 													</li>
-													<li>Using RabbitMQ for Data Ingest services
+													<li>Used RabbitMQ for Data Ingest services
 													</li>
-													<li>Migrating data in to S3 Object storage
+													<li>Migrated data in to S3 Object storage
 													</li>
-													<li>Leveraging Data Search and Analytics using ElasticSearch and
+													<li>Leveraged Data Search and Analytics using ElasticSearch and
 														Kibana (for observability, indexing, template searches)
 													</li>
-													<li>Utilizing Cloud Computing Software with AWS and OpenShift
+													<li>Utilized Cloud Computing Software with AWS and OpenShift
 													</li>
 													<li>
 														Participated in requirements gathering to solidify prerequisites
@@ -1453,23 +1488,25 @@
 														Company</a> <span>2009-2010</span></h2>
 												<ul>
 													<li>Worked in an Agile development team on a 40 million dollar
-														project for Supplier Quality Systems. Developed a supplier
+														project for Supplier Quality Systems. </li>
+													<li>Developed a supplier
 														quality system for Boeing Commercial Airlines and Boeing Defense
-														Systems. Communicated with external and internal suppliers.
-														Scribed for the Bi-weekly meetings between the Vice Presidents
-														of Supplier Quality. Conducted lunch and learns to identify new
+														Systems.</li>
+													<li>Communicated with external and internal suppliers.</li>
+													<li>Scribed for the Bi-weekly meetings between the Vice Presidents
+														of Supplier Quality.</li>
+													<li>Conducted lunch and learns to identify new
 														technologies (security tunneling schemas and Adobe Flex) that
 														would be used in our new system.</li>
-													<br>
 													<li>Wrote Visual Basic Scripts for Shop Floor
 														Control for the C-17 program. Communicated with System Managers
-														and customers for system retirement.</li><br>
+														and customers for system retirement.</li>
 													<li>Learned how to make use of Desktop Service Requests with an
 														outside vendor (i.e Dell). Requests consisted of matching
 														hardware to customer (i.e. Engineers receiving engineering
 														laptops), specialized electronic devices, change in location of
-														vendors, hardware and software issues, network outages, and etc.
-														Completed requests via phone and email with the customer. If a
+														vendors, hardware and software issues, network outages, and etc.</li>
+													<li>Completed requests via phone and email with the customer. If a
 														request was not completed, requests were manually modified
 														within the system.</li>
 												</ul>
@@ -1551,8 +1588,9 @@
 								<div class="project" style="background-image: url(images/natours.png);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://ksoliven.github.io/natours-responsive-development/">Natours using Advanced SASS
-													</a>
+											<h3><a href="https://ksoliven.github.io/natours-responsive-development/">Natours
+													using Advanced SASS
+												</a>
 											</h3>
 											<span>Technologies: HTML, CSS, and SASS</span>
 										</div>
@@ -1563,7 +1601,8 @@
 								<div class="project" style="background-image: url(images/trillo.png);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://ksoliven.github.io/trillo-flexbox-development/">Trillo using Flexbox
+											<h3><a href="https://ksoliven.github.io/trillo-flexbox-development/">Trillo
+													using Flexbox
 												</a></h3>
 											<span>Technologies: HTML, CSS, and SASS</span>
 										</div>
@@ -1571,11 +1610,11 @@
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project"
-									style="background-image: url(images/nexter.png);">
+								<div class="project" style="background-image: url(images/nexter.png);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://ksoliven.github.io/nexter-css-grid/">Nexter using CSS grid</a>
+											<h3><a href="https://ksoliven.github.io/nexter-css-grid/">Nexter using CSS
+													grid</a>
 											</h3>
 											<span>Technologies: HTML, CSS, and SASS
 											</span>
@@ -1598,17 +1637,20 @@
 								<div class="project" style="background-image: url(https://i.ibb.co/bRTtYWw/TS.png);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://github.com/ksoliven/NumsToWords">Numbers To Words</a></h3>
+											<h3><a href="https://github.com/ksoliven/NumsToWords">Numbers To Words</a>
+											</h3>
 											<span>Technologies: Typescript and Angular.</span>
 										</div>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(https://i.ibb.co/92jJwR0/elastic.png);">
+								<div class="project"
+									style="background-image: url(https://i.ibb.co/92jJwR0/elastic.png);">
 									<div class="desc">
 										<div class="con">
-											<h3><a href="https://github.com/ksoliven/Elastic_NEST_Painless">Elastic Nest CRUD</a></h3>
+											<h3><a href="https://github.com/ksoliven/Elastic_NEST_Painless">Elastic Nest
+													CRUD</a></h3>
 											<span>Technologies: ElasticSearch, Painless, C#, and NEST</span>
 										</div>
 									</div>
