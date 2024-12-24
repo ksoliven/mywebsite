@@ -36,15 +36,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 04/2024
+## Changes - 12/2024
 
-* Updated resume
-* Removed Vanilla Toasts
-* Added [Awesome Notifications](https://f3oall.github.io/awesome-notifications/docs/) in lieu of Vanilla Toasts
-* Updated EmailJS library 
-* Fixed a bug with toast connection with Captcha
+* Updated skills and education
+* Updated work history with current work
 
 ## Todos
 
 * Will need to update the portfolio section with some more of my React, Angular, and RUST projects
-* Currently in process of developing a portfolio website for a client and a landing site for an Instagram profile.
+
