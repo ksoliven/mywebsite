@@ -36,10 +36,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 12/2024
+## Changes - 5/2025
 
-* Updated skills and education
-* Updated work history with current work
+* Updated skills and current work
+* Updated my new AWS Recertification
 
 ## Todos
 
