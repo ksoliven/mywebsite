@@ -6,6 +6,8 @@
 
 It's a personal portfolio website for Kate Soliven built with Javascript, CSS, HTML, Bootstrap, and jQuery. It's based on a customized Colorlib template and currently includes a blossom day/night theme toggle, responsive mobile updates, portfolio work, certifications, references, organizations, and a contact form integration.
 
+Current styling note: the live site loads `css/style.css` and `css/switch.css` directly. The older `switch.scss` files in the repo are legacy placeholders and are not the current deployment source of truth.
+
 ## Coded With
 
 [<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">](https://getbootstrap.com/) [<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">](https://css3.com/) [<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">](https://html.com/)  [<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">](https://www.javascript.com/) [<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">](https://jquery.com/)

@@ -1,11 +1,7 @@
-.switch {
-  background: #343d5b;
-  border-radius: 1000px;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  outline: none;
-}
-/*# sourceMappingURL=switch.css.map */
+/*
+ * Deprecated generated file.
+ *
+ * The active portfolio styling is served from `css/style.css` and
+ * `css/switch.css`. This file is kept only as a legacy placeholder so the old
+ * Sass path is not mistaken for the deployed source of truth.
+ */

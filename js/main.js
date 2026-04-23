@@ -230,44 +230,6 @@
 
 	};
 
-	var themeSwitch = function() {
-		var root = document.documentElement;
-		var button = document.getElementById('theme-switch');
-
-		if (!button) {
-			return;
-		}
-
-		var setTheme = function(theme) {
-			var isNight = theme === 'night';
-			root.setAttribute('data-theme', isNight ? 'night' : 'blossom');
-			button.setAttribute('aria-pressed', isNight ? 'true' : 'false');
-			button.classList.toggle('is-night', isNight);
-			button.setAttribute('aria-label', isNight ? 'Night Bloom theme enabled' : 'Day Bloom theme enabled');
-			var label = button.querySelector('.theme-switch-label');
-			if (label) {
-				label.textContent = isNight ? 'Night Bloom' : 'Day Bloom';
-			}
-			try {
-				localStorage.setItem('kate-theme', isNight ? 'night' : 'blossom');
-			} catch (error) {}
-		};
-
-		setTheme(root.getAttribute('data-theme') || 'blossom');
-
-		button.addEventListener('click', function () {
-			button.classList.remove('is-toggling');
-			window.setTimeout(function () {
-				button.classList.add('is-toggling');
-			}, 0);
-			var nextTheme = root.getAttribute('data-theme') === 'night' ? 'blossom' : 'night';
-			setTheme(nextTheme);
-			window.setTimeout(function () {
-				button.classList.remove('is-toggling');
-			}, 460);
-		});
-	};
-
 	var stickyFunction = function() {
 
 		var h = $('.image-content').outerHeight();
@@ -338,7 +300,6 @@
 
 		mobileMenuOutsideClick();
 		sliderMain();
-		themeSwitch();
 		stickyFunction();
 		owlCrouselFeatureSlide();
 	});

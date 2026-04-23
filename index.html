@@ -46,17 +46,6 @@
 	<link rel="stylesheet" type="text/css" href="css/awesome.css">
 	<!-- Switch Icon API-->
 	<script src="https://kit.fontawesome.com/9680114bd9.js" crossorigin="anonymous"></script>
-	<script>
-		(function () {
-			var storedTheme = null;
-			try {
-				storedTheme = localStorage.getItem('kate-theme');
-			} catch (error) {}
-			var prefersNight = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-			var theme = storedTheme || (prefersNight ? 'night' : 'blossom');
-			document.documentElement.setAttribute('data-theme', theme);
-		})();
-	</script>
 	<!-- Emailjs integration -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">
@@ -105,20 +94,6 @@
 
 <body>
 	<div id="colorlib-page">
-		<div class="petal-field" aria-hidden="true">
-			<span class="petal petal-1"></span>
-			<span class="petal petal-2"></span>
-			<span class="petal petal-3"></span>
-			<span class="petal petal-4"></span>
-			<span class="petal petal-5"></span>
-			<span class="petal petal-6"></span>
-			<span class="petal petal-7"></span>
-			<span class="petal petal-8"></span>
-			<span class="petal petal-9"></span>
-			<span class="petal petal-10"></span>
-			<span class="petal petal-11"></span>
-			<span class="petal petal-12"></span>
-		</div>
 		<div class="container-wrap">
 			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
 				aria-expanded="false" aria-controls="navbar"><i></i></a>
@@ -147,16 +122,6 @@
 						</ul>
 					</div>
 				</nav>
-				<div class="theme-switch-wrap">
-					<button class="theme-switch" id="theme-switch" type="button" aria-label="Switch color theme"
-						aria-pressed="false">
-						<span class="theme-switch-orb" aria-hidden="true"></span>
-						<span class="theme-switch-icon theme-switch-sun"><i class="fas fa-sun"></i></span>
-						<span class="theme-switch-label">Night Bloom</span>
-						<span class="theme-switch-icon theme-switch-moon"><i class="fas fa-moon"></i></span>
-					</button>
-				</div>
-
 				<div class="colorlib-footer">
 					<p><small>&copy;
 							Copyright &copy;
