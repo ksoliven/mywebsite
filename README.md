@@ -4,11 +4,21 @@
   <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
 </p>
 
-It's a portfolio website encoded in Javascript, CSS, HTML, Bootstrap, and JQuery. It's based off of the Colorlib templates and uses an internal icon library.
+It's a personal portfolio website for Kate Soliven built with Javascript, CSS, HTML, Bootstrap, and jQuery. It's based on a customized Colorlib template and currently includes a blossom day/night theme toggle, responsive mobile updates, portfolio work, certifications, references, organizations, and a contact form integration.
 
 ## Coded With
 
 [<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">](https://getbootstrap.com/) [<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">](https://css3.com/) [<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">](https://html.com/)  [<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">](https://www.javascript.com/) [<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">](https://jquery.com/)
+
+Additional libraries and integrations used in the site:
+
+- Bootstrap
+- Flexslider
+- Owl Carousel
+- Animate.css
+- EmailJS
+- Font Awesome
+- Sass
 
 ## Graphic Programs Used
 
@@ -20,15 +30,15 @@ It's a portfolio website encoded in Javascript, CSS, HTML, Bootstrap, and JQuery
 
 ## Future Enhancements
 
-Will need to apply carousel function to subcategories for overall flow.
+- Continue refining mobile responsiveness
+- Add newer React, Angular, FastAPI, NestJS, and Rust portfolio work
+- Tighten SEO and social metadata
+- Keep improving section flow and visual consistency
+- Continue cleaning up legacy template structure and styling
 
 ## Author
 
 * **Kate Soliven** - *Initial work* - [ksoliven](https://github.com/ksoliven)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
@@ -36,12 +46,17 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Coding Dojo
 * Adobe
 
-## Changes - 1/2026
+## Changes - 4/2026
 
-* Updated skills and current work
-* Updated graduate school and resume
+* Updated site structure and fixed broken HTML section nesting
+* Added blossom day/night theme support with a persistent toggle
+* Added animation and styling updates for the theme switch
+* Updated mobile styling and responsive behavior
+* Refined dark mode readability across portfolio, certifications, organizations, and contact sections
+* Updated README content to better match the current site
 
 ## Todos
 
-* Will need to update the portfolio section with some more of my React, Angular, and RUST projects
-
+* Update the portfolio section with newer React, Angular, FastAPI, NestJS, and Rust projects
+* Replace older demo work with stronger recent production-facing examples
+* Improve SEO metadata and social preview content
