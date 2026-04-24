@@ -4,9 +4,9 @@
   <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
 </p>
 
-It's a personal portfolio website for Kate Soliven built with Javascript, CSS, HTML, Bootstrap, and jQuery. It's based on a customized Colorlib template and currently includes a blossom day/night theme toggle, responsive mobile updates, portfolio work, certifications, references, organizations, and a contact form integration.
+It's a personal portfolio website for Kate Soliven built with Javascript, CSS, HTML, Bootstrap, and jQuery. It's based on a customized Colorlib template and currently includes a cherry blossom-inspired day/night theme, animated petals, responsive mobile updates, portfolio work, certifications, references, organizations, a contact form integration, and a custom signature footer.
 
-Current styling note: the live site loads `css/style.css` and `css/switch.css` directly. The older `switch.scss` files in the repo are legacy placeholders and are not the current deployment source of truth.
+Current styling note: the live site loads `css/style.css` and `css/switch.css` directly. The older `switch.scss` files in the repo are legacy placeholders and are not the current deployment source of truth. The project also uses local assets for the footer signature font and night-mode hero images.
 
 ## Coded With
 
@@ -20,7 +20,7 @@ Additional libraries and integrations used in the site:
 - Animate.css
 - EmailJS
 - Font Awesome
-- Sass
+- Local font assets for the footer signature
 
 ## Graphic Programs Used
 
@@ -33,10 +33,12 @@ Additional libraries and integrations used in the site:
 ## Future Enhancements
 
 - Continue refining mobile responsiveness
+- Add an optional About Me portrait / back-facing lifestyle image
 - Add newer React, Angular, FastAPI, NestJS, and Rust portfolio work
 - Tighten SEO and social metadata
 - Keep improving section flow and visual consistency
 - Continue cleaning up legacy template structure and styling
+- Keep refining the cherry blossom night mode with dedicated assets instead of broad CSS overrides
 
 ## Author
 
@@ -51,7 +53,10 @@ Additional libraries and integrations used in the site:
 ## Changes - 4/2026
 
 * Updated site structure and fixed broken HTML section nesting
-* Added blossom day/night theme support with a persistent toggle
+* Added cherry blossom day/night theme support with a persistent toggle
+* Added drifting petal animation and blossom styling refinements
+* Added dedicated night-mode hero assets for better visual consistency
+* Added a Sakura-style signature footer with custom local font assets
 * Added animation and styling updates for the theme switch
 * Updated mobile styling and responsive behavior
 * Refined dark mode readability across portfolio, certifications, organizations, and contact sections
@@ -59,6 +64,7 @@ Additional libraries and integrations used in the site:
 
 ## Todos
 
+* Keep refining the night-mode hero slides for consistency between assets
 * Update the portfolio section with newer React, Angular, FastAPI, NestJS, and Rust projects
 * Replace older demo work with stronger recent production-facing examples
 * Improve SEO metadata and social preview content
