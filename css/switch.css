@@ -12,6 +12,11 @@
   --theme-glow: rgba(232, 174, 201, 0.35);
   --theme-overlay: linear-gradient(135deg, rgba(255, 246, 250, 0.1), rgba(255, 223, 236, 0.22));
   --theme-shadow: 0 20px 60px rgba(176, 98, 132, 0.12);
+  --motion-fast: 0.22s;
+  --motion-base: 0.28s;
+  --motion-slow: 0.36s;
+  --motion-ease: ease;
+  --motion-emphasis: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 :root[data-theme="night"] {
@@ -52,7 +57,7 @@ html[data-theme="night"] {
 body {
   background: #ffffff;
   color: var(--theme-text);
-  transition: background-color 0.35s ease, color 0.35s ease;
+  transition: background-color var(--motion-slow) var(--motion-ease), color var(--motion-base) var(--motion-ease);
 }
 
 html[data-theme="night"] body {
@@ -250,7 +255,7 @@ html[data-theme="night"] .social-link {
   --switch-pad: 10px;
   --switch-slot: 42px;
   --switch-orb: 34px;
-  transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: background-color var(--motion-base) var(--motion-ease), border-color var(--motion-base) var(--motion-ease), box-shadow var(--motion-base) var(--motion-ease), transform var(--motion-base) var(--motion-ease);
 }
 
 .theme-switch::before {
@@ -290,7 +295,7 @@ html[data-theme="night"] .theme-switch::before {
   background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.96), rgba(255, 222, 234, 0.98) 52%, rgba(229, 170, 197, 0.92) 100%);
   box-shadow: 0 10px 22px rgba(154, 88, 116, 0.24);
   transform: translateY(-50%);
-  transition: left 0.35s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: left var(--motion-slow) var(--motion-emphasis), background var(--motion-base) var(--motion-ease), box-shadow var(--motion-base) var(--motion-ease), transform var(--motion-base) var(--motion-ease);
   z-index: 1;
 }
 
@@ -309,7 +314,7 @@ html[data-theme="night"] .theme-switch-orb {
   position: relative;
   z-index: 2;
   font-size: 16px;
-  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  transition: color var(--motion-base) var(--motion-ease), transform var(--motion-base) var(--motion-ease), opacity var(--motion-fast) var(--motion-ease);
 }
 
 .theme-switch-sun {
@@ -444,6 +449,55 @@ html[data-theme="night"] #colorlib-hero .flexslider .slides li[style*="clean-bg.
   color: #fff8fb !important;
   border-color: #ab4d73 !important;
   background: #ab4d73 !important;
+}
+
+.colorlib-blog .blog-entry .blog-img {
+  aspect-ratio: 1 / 1;
+  background: #f4f1f6;
+}
+
+.colorlib-blog .blog-entry .blog-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+a,
+#colorlib-aside,
+#colorlib-aside #colorlib-main-menu ul li a,
+#colorlib-aside #colorlib-main-menu ul li a:after,
+.blog-entry .blog-img img,
+.project .desc,
+.project .desc h3,
+.project .desc span,
+.btn-outline,
+.form-control,
+.colorlib-nav-toggle i,
+.colorlib-nav-toggle i::before,
+.colorlib-nav-toggle i::after {
+  transition-duration: var(--motion-base) !important;
+}
+
+a,
+#colorlib-aside,
+#colorlib-aside #colorlib-main-menu ul li a,
+.blog-entry .blog-img img,
+.project .desc,
+.project .desc h3,
+.project .desc span,
+.btn-outline,
+.form-control,
+.colorlib-nav-toggle i,
+.colorlib-nav-toggle i::before,
+.colorlib-nav-toggle i::after {
+  transition-timing-function: var(--motion-ease) !important;
+}
+
+#colorlib-aside #colorlib-main-menu ul li a:after {
+  transition-duration: var(--motion-slow) !important;
+  transition-timing-function: var(--motion-emphasis) !important;
 }
 
 .services,
@@ -932,15 +986,18 @@ html[data-theme="night"] .blog-entry .desc {
 
 html[data-theme="night"] .colorlib-clients img {
   display: block;
-  padding: 24px;
-  background: rgba(255, 255, 255, 0.94);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  box-shadow: 0 18px 38px rgba(9, 6, 20, 0.22);
+  padding: 12px 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 18px 30px rgba(9, 6, 20, 0.18));
 }
 
+html[data-theme="night"] .colorlib-certifications .project,
 html[data-theme="night"] .colorlib-references .project {
-  background-color: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.14);
+  background-color: rgba(22, 16, 34, 0.9);
+  border: 1px solid rgba(238, 179, 208, 0.12);
+  box-shadow: 0 18px 38px rgba(9, 6, 20, 0.22);
 }
 
 html[data-theme="night"] .colorlib-references .project .desc {
