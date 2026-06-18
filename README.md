@@ -4,7 +4,7 @@
   <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
 </p>
 
-This is Kate Soliven's personal portfolio website, built with JavaScript, CSS, HTML, Bootstrap, and jQuery. It is based on a customized Colorlib template and presents a professional profile focused on systems engineering and software engineering. The site includes an About section, expertise overview, technical skills, education, certifications, work experience, portfolio projects, organizations, references, contact form integration, and a cherry blossom-inspired day/night theme.
+This is Kate Soliven's personal portfolio website, built with JavaScript, CSS, HTML, Bootstrap, and jQuery. It is based on a customized Colorlib template and presents a professional profile focused on systems engineering and software engineering. The site includes an About section, expertise overview, technical skills, education, professional certifications and badges, work experience, portfolio projects, organizations, references, contact form integration, and a cherry blossom-inspired day/night theme.
 
 Current styling note: the live site loads `css/style.css` and `css/switch.css` directly. The older `switch.scss` files in the repo are legacy placeholders and are not the current deployment source of truth. The project also uses local assets for the footer signature font and night-mode hero images.
 
@@ -43,6 +43,7 @@ Additional libraries and integrations used in the site:
 
 - Refined the About section to better reflect current systems engineering and software engineering experience
 - Tightened the skills, organizations, and experience copy for a more consistent professional tone
+- Added the Foundry & AIP Builder Foundations digital badge to the certifications section with a local PDF credential
 - Reduced older or less relevant experience entries to keep the timeline focused
 - Curated the education section to emphasize the strongest and most relevant academic items
 - Updated section labels and date formatting for better consistency across the site
