@@ -202,6 +202,7 @@ figure {
 		height: 150px;
 		margin: 0 auto;
 		margin-bottom: 30px;
+		background-position: center center;
 		@include border-radius(50%);
 	}
 	.position{
@@ -1218,6 +1219,9 @@ margin-left: -20px;
 	width: 100%;
 	display: block;
 	margin-bottom: 30px;
+	.colorlib-references & {
+		background-size: contain;
+	}
 	.desc{
 		position: absolute;
 		top: 0;

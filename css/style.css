@@ -130,6 +130,7 @@ figure figcaption {
   height: 150px;
   margin: 0 auto;
   margin-bottom: 30px;
+  background-position: center center;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1316,6 +1317,10 @@ textarea {
   width: 100%;
   display: block;
   margin-bottom: 30px;
+}
+
+.colorlib-references .project {
+  background-size: contain;
 }
 
 .project .desc {

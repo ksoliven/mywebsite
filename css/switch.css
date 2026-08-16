@@ -1000,6 +1000,12 @@ html[data-theme="night"] .colorlib-references .project {
   box-shadow: 0 18px 38px rgba(9, 6, 20, 0.22);
 }
 
+html[data-theme="night"] .colorlib-references .project {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 html[data-theme="night"] .colorlib-references .project .desc {
   background: rgba(18, 14, 31, 0.66);
 }

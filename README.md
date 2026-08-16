@@ -4,7 +4,7 @@
   <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
 </p>
 
-This is Kate Soliven's personal portfolio website, built with JavaScript, CSS, HTML, Bootstrap, and jQuery. It is based on a customized Colorlib template and presents a professional profile focused on systems engineering and software engineering. The site includes an About section, expertise overview, technical skills, education, professional certifications and badges, work experience, portfolio projects, organizations, references, contact form integration, and a cherry blossom-inspired day/night theme.
+This is Kate Soliven's personal portfolio website, built with JavaScript, CSS, HTML, Bootstrap, and jQuery. It is based on a customized Colorlib template and presents a professional profile focused on systems engineering and software engineering. The site includes an About section, expertise overview, technical skills, education, professional certifications and badges, supported client organizations, work experience, portfolio projects, organizations, references, contact form integration, downloadable resume PDF, and a cherry blossom-inspired day/night theme.
 
 Current styling note: the live site loads `css/style.css` and `css/switch.css` directly. The older `switch.scss` files in the repo are legacy placeholders and are not the current deployment source of truth. The project also uses local assets for the footer signature font and night-mode hero images.
 
@@ -38,11 +38,18 @@ Additional libraries and integrations used in the site:
 - Keep improving section flow and visual consistency
 - Continue cleaning up legacy template structure and styling
 - Keep refining the cherry blossom night mode with dedicated assets instead of broad CSS overrides
+- Keep site assets local where possible so portfolio thumbnails, resume links, and client imagery remain reliable
 
 ## Recent Content Updates
 
-- Refined the About section to better reflect current systems engineering and software engineering experience
-- Tightened the skills, organizations, and experience copy for a more consistent professional tone
+- Refined the About section with broader experience wording and a new optimized profile avatar
+- Tightened the skills, expertise cards, organizations, and experience copy for a more consistent professional tone
+- Updated Georgia Tech education content to reflect graduation in August 2026 with a final 4.0 GPA
+- Updated the downloadable resume PDF to reflect Georgia Tech graduation and final GPA
+- Added GTRI to the supported client organizations graphic while preserving the original client image
+- Moved remote portfolio thumbnails into local image assets for more reliable loading
+- Improved reference icon rendering in light and night mode so avatar graphics are not cropped
+- Added more descriptive image alt text and safer external-link attributes
 - Added the Foundry & AIP Builder Foundations digital badge to the certifications section with a local PDF credential
 - Reduced older or less relevant experience entries to keep the timeline focused
 - Curated the education section to emphasize the strongest and most relevant academic items
@@ -50,9 +57,9 @@ Additional libraries and integrations used in the site:
 
 ## Future Enhancements
 
-- Add an optional About Me portrait / back-facing lifestyle image
 - Add stronger recent portfolio projects to replace older demo work where appropriate
 - Improve SEO metadata and social preview content
+- Continue reducing inline styles and legacy template markup as sections are refined
 
 ## Author
 
