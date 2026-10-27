@@ -3,7 +3,7 @@
 Last updated: October 2026
 
 <p align="center">
-  <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
+  <img src="images/about-cherry-blossoms.png" alt="Illustration overlooking the Washington Monument framed by cherry blossoms" width="320">
 </p>
 
 This is Kate Soliven's personal portfolio website, built with JavaScript, CSS, HTML, Bootstrap, and jQuery. It is based on a customized Colorlib template and presents a professional profile focused on systems engineering and software engineering. The site includes an About section, expertise overview, technical skills, education, professional certifications and badges, supported client organizations, work experience, portfolio projects, organizations, references, contact form integration, downloadable resume PDF, and a cherry blossom-inspired day/night theme.
