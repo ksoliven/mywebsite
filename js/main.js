@@ -4,36 +4,24 @@
 
 
 
-	var isMobile = {
-		Android: function() {
-			return navigator.userAgent.match(/Android/i);
-		},
-			BlackBerry: function() {
-			return navigator.userAgent.match(/BlackBerry/i);
-		},
-			iOS: function() {
-			return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-		},
-			Opera: function() {
-			return navigator.userAgent.match(/Opera Mini/i);
-		},
-			Windows: function() {
-			return navigator.userAgent.match(/IEMobile/i);
-		},
-			any: function() {
-			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-		}
-	};
+	var compactLayout = window.matchMedia('(max-width: 1180px)');
 
 	var fullHeight = function() {
+		var resize = function() {
+			// Small screens use CSS viewport units so browser toolbars do not crop content.
+			$('.js-fullheight').css('height', compactLayout.matches ? '' : $(window).height());
+		};
+		resize();
+		$(window).on('resize', resize);
+	};
 
-		if ( !isMobile.any() ) {
-			$('.js-fullheight').css('height', $(window).height());
-			$(window).resize(function(){
-				$('.js-fullheight').css('height', $(window).height());
-			});
-		}
-
+	var setMenuOpen = function(open) {
+		$('body').toggleClass('offcanvas', open);
+		$('.js-colorlib-nav-toggle').toggleClass('active', open)
+			.attr('aria-expanded', String(open))
+			.attr('aria-label', open ? 'Close navigation' : 'Open navigation');
+		// Prevent keyboard focus from entering the drawer while it is offscreen.
+		$('#colorlib-aside').prop('inert', compactLayout.matches && !open);
 	};
 
 
@@ -60,6 +48,10 @@
 
 	// Animations
 	var contentWayPoint = function() {
+		if (compactLayout.matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			$('.animate-box').addClass('animated');
+			return;
+		}
 		var i = 0;
 		$('.animate-box').waypoint( function( direction ) {
 
@@ -97,57 +89,34 @@
 
 
 	var burgerMenu = function() {
+		$('.js-colorlib-nav-toggle').on('click', function() {
+			setMenuOpen(!$('body').hasClass('offcanvas'));
+		});
+		setMenuOpen(false);
+		$(window).on('resize', function() {
+			setMenuOpen(false);
+		});
+	};
 
-		$('.js-colorlib-nav-toggle').on('click', function(event){
-			event.preventDefault();
-			var $this = $(this);
-
-			if ($('body').hasClass('offcanvas')) {
-				$this.removeClass('active');
-				$('body').removeClass('offcanvas');	
-			} else {
-				$this.addClass('active');
-				$('body').addClass('offcanvas');	
+	var mobileMenuOutsideClick = function() {
+		$(document).on('click', function(event) {
+			if (!$(event.target).closest('#colorlib-aside, .js-colorlib-nav-toggle').length) {
+				setMenuOpen(false);
 			}
 		});
-
-
-
+		$(document).on('keydown', function(event) {
+			if (event.key === 'Escape' && $('body').hasClass('offcanvas')) {
+				setMenuOpen(false);
+				$('.js-colorlib-nav-toggle').trigger('focus');
+			}
+		});
 	};
 
-	// Click outside of offcanvass
-	var mobileMenuOutsideClick = function() {
-
-		$(document).click(function (e) {
-	    var container = $("#colorlib-aside, .js-colorlib-nav-toggle");
-	    if (!container.is(e.target) && container.has(e.target).length === 0) {
-
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	    	}
-	    	
-	    }
-		});
-
-		$(window).scroll(function(){
-			if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-colorlib-nav-toggle').removeClass('active');
-			
-	    	}
-		});
-
-	};
 
 	var clickMenu = function() {
 
 		$('#navbar a:not([class="external"])').click(function(event){
-			var section = $(this).data('nav-section'),
-				navbar = $('#navbar');
+			var section = $(this).data('nav-section');
 
 				if ( $('[data-section="' + section + '"]').length ) {
 			    	$('html, body').animate({
@@ -155,11 +124,7 @@
 			    	}, 500);
 			   }
 
-		    if ( navbar.is(':visible')) {
-		    	navbar.removeClass('in');
-		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-colorlib-nav-toggle').removeClass('active');
-		    }
+			setMenuOpen(false);
 
 		    event.preventDefault();
 		    return false;

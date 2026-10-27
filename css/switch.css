@@ -1396,3 +1396,294 @@ html[data-theme="night"] .site-signature-icon img {
     transition: none !important;
   }
 }
+
+/* Personal illustration above the About Me introduction. */
+.about-illustration {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  border: 1px solid var(--theme-line);
+  border-radius: 12px;
+  background: var(--theme-bg-secondary);
+  box-shadow: var(--theme-shadow);
+}
+
+.about-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+html[data-theme="night"] .about-illustration img {
+  filter: brightness(0.82) saturate(0.88);
+}
+
+/* Phone and tablet layouts share a drawer instead of a narrow desktop column. */
+@media screen and (max-width: 1180px) {
+  #colorlib-aside {
+    width: min(300px, calc(100vw - 64px));
+    height: 100vh;
+    height: 100dvh;
+    padding-top: max(28px, env(safe-area-inset-top));
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+    transform: translateX(-100%);
+    visibility: hidden;
+    overscroll-behavior: contain;
+  }
+
+  body.offcanvas #colorlib-aside {
+    width: min(300px, calc(100vw - 64px));
+    transform: translateX(0);
+    visibility: visible;
+    z-index: 1001;
+  }
+
+  #colorlib-main {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  body.offcanvas #colorlib-main {
+    transform: none;
+  }
+
+  .colorlib-nav-toggle {
+    visibility: visible;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    left: max(10px, env(safe-area-inset-left));
+    top: max(10px, env(safe-area-inset-top));
+    border: 1px solid var(--theme-line);
+    border-radius: 12px;
+    background: var(--theme-bg-secondary);
+    box-shadow: var(--theme-shadow);
+  }
+
+  .colorlib-nav-toggle i {
+    display: block;
+    width: 24px;
+  }
+
+  .colorlib-nav-toggle i::before,
+  .colorlib-nav-toggle i::after {
+    width: 24px;
+  }
+
+  body.offcanvas .colorlib-nav-toggle {
+    top: max(10px, env(safe-area-inset-top));
+    transform: translateX(min(300px, calc(100vw - 64px)));
+  }
+
+  #colorlib-aside #colorlib-main-menu ul li {
+    margin-bottom: 0;
+  }
+
+  #colorlib-aside #colorlib-main-menu ul li a {
+    display: block;
+    min-height: 44px;
+    padding: 12px;
+  }
+
+  #colorlib-aside .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  #colorlib-hero {
+    margin-bottom: 3em;
+  }
+
+  #colorlib-hero,
+  #colorlib-hero .flexslider,
+  #colorlib-hero .flexslider .slides li,
+  #colorlib-hero .flexslider .slider-text,
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    height: 100svh;
+    min-height: 480px;
+  }
+
+  #colorlib-hero .flexslider .slider-text > .slider-text-inner {
+    padding-top: 80px;
+  }
+
+  .colorlib-heading {
+    overflow-wrap: anywhere;
+  }
+
+  .timeline-label,
+  .panel-body,
+  .colorlib-feature .colorlib-text {
+    overflow-wrap: anywhere;
+  }
+
+  .timeline-label ul {
+    padding-left: 20px;
+  }
+
+  .panel-heading a {
+    min-height: 44px;
+    padding-right: 36px;
+    line-height: 1.5;
+  }
+
+  .colorlib-clients img {
+    height: auto;
+    margin-bottom: 36px !important;
+  }
+
+  .colorlib-contact .form-control {
+    font-size: 16px;
+  }
+
+  .colorlib-contact .btn {
+    min-height: 44px;
+  }
+}
+
+/* Captions stay below images on touchscreens; no hover is needed to find links. */
+@media (hover: none), (pointer: coarse) {
+  .project {
+    height: auto;
+    padding-top: 220px;
+    background-size: auto 220px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .project .desc,
+  html[data-theme="night"] .project .desc {
+    position: relative;
+    height: auto;
+    opacity: 1;
+    background: var(--theme-bg-secondary);
+    border-top: 1px solid var(--theme-line);
+  }
+
+  .project .desc .con {
+    height: auto;
+    padding: 18px;
+  }
+
+  .project .desc h3,
+  .project .desc span {
+    transform: none;
+    color: var(--theme-text);
+  }
+
+  .project .desc h3 a,
+  html[data-theme="night"] .project .desc h3 a {
+    display: inline-block;
+    padding: 8px 0;
+    color: var(--theme-accent-strong);
+  }
+
+  .project:hover,
+  .services:hover,
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:hover {
+    transform: none;
+  }
+}
+
+.project:focus-within .desc {
+  opacity: 1;
+}
+
+.project:focus-within .desc h3,
+.project:focus-within .desc span {
+  transform: none;
+}
+
+.colorlib-nav-toggle:focus-visible,
+#colorlib-aside a:focus-visible {
+  outline: 2px solid var(--theme-accent-strong);
+  outline-offset: 3px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1180px) {
+  .colorlib-narrow-content {
+    padding: 0 28px;
+  }
+
+  .colorlib-skills .col-md-6,
+  .colorlib-work .col-md-6,
+  .colorlib-certifications .col-md-6,
+  .colorlib-references .col-md-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .colorlib-about .col-md-3 {
+    width: 50%;
+    float: left;
+  }
+
+  .colorlib-services .col-md-4 {
+    width: 33.333333%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #colorlib-main {
+    padding: 0 12px;
+  }
+
+  .colorlib-narrow-content {
+    padding: 0 10px;
+  }
+
+  .colorlib-heading {
+    letter-spacing: 3px;
+  }
+
+  .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+    margin-left: 40px;
+    padding: 14px;
+  }
+
+  .timeline-label h2 span {
+    display: block;
+    margin-top: 8px;
+  }
+
+  .site-signature-name {
+    font-size: clamp(28px, 8vw, 38px);
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  /* Long skill lists should not leave content waiting in an animation queue. */
+  .animate-box {
+    opacity: 1 !important;
+    animation: none !important;
+    transform: none;
+  }
+
+  .colorlib-contact .col-md-5,
+  .colorlib-contact .col-md-7 {
+    width: 100%;
+    float: none;
+  }
+
+  .colorlib-contact .col-md-7 {
+    margin-top: 28px;
+  }
+
+  .colorlib-contact .col-md-10.col-md-offset-1.col-md-pull-1 {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-box {
+    opacity: 1 !important;
+    animation: none !important;
+  }
+}

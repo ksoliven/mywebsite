@@ -1,5 +1,7 @@
 # Kate Soliven Portfolio Website
 
+Last updated: October 2026
+
 <p align="center">
   <a href="https://ibb.co/jkvhxWwG"><img src="https://i.ibb.co/SwXN1dm0/diagram-1.png" alt="diagram-1" border="0"></a>
 </p>
@@ -26,13 +28,15 @@ Additional libraries and integrations used in the site:
 
 [<img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white">](https://www.adobe.com/products/illustrator/campaign/pricing.html?sdid=KKQML&mv=search&ef_id=EAIaIQobChMI0d2RuZ6mhAMVAHFHAR1IagCzEAAYASAAEgLP5_D_BwE:G:s&s_kwcid=AL!3085!3!356518781933!e!!g!!illustrator!1711729586!70905759350&gad_source=1) [<img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black">](https://www.adobe.com/products/photoshop/landpa.html?sdid=P79NQKGF&mv=search&mv2=paidsearch&ef_id=EAIaIQobChMIt9DYjZ6mhAMVBWtHAR2hAQRuEAAYASAAEgIQp_D_BwE:G:s&s_kwcid=AL!3085!3!673842496258!e!!g!!photoshop!1712238394!67643541820&mv=search&gad_source=1) 
 
+Mermaid is listed at 80% under Developer Tools for diagrams as code in systems and software engineering.
+
 ## Wireframing
 
 [<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">](https://www.figma.com/) 
 
 ## Current Focus
 
-- Continue refining mobile responsiveness
+- Validate the responsive layouts on physical phones and iPads, including Safari
 - Add newer React, Angular, FastAPI, NestJS, and Rust portfolio work
 - Tighten SEO and social metadata
 - Keep improving section flow and visual consistency
@@ -40,7 +44,24 @@ Additional libraries and integrations used in the site:
 - Keep refining the cherry blossom night mode with dedicated assets instead of broad CSS overrides
 - Keep site assets local where possible so portfolio thumbnails, resume links, and client imagery remain reliable
 
-## Recent Content Updates
+## Phone and iPad Support
+
+- Responsive layouts use a navigation drawer up to 1180px, with full-width content and tablet grids.
+- The drawer supports touch controls, Escape to close, and closes after choosing a section; hidden navigation is excluded from keyboard focus.
+- Hero sizing follows the available mobile viewport, and project captions remain visible on touchscreens.
+- Contact fields use mobile-friendly sizing, autofill, and an email keyboard. The form stacks on smaller screens.
+- Phone and tablet content appears without waiting for scroll-animation queues. Both color themes share the responsive styles.
+
+To preview, serve the repository with `python3 -m http.server 8000` and open `http://localhost:8000`. Use browser device emulation to check phone widths (320–390px), iPad portrait (768–834px), tablet landscape (1024–1180px), and desktop (1366px and above). Check both themes, navigation, project links, education panels, and the contact form. A physical iPhone/iPad Safari check remains useful for device-specific behavior.
+
+## Changes - October 2026
+
+- Updated skills, work experience, and the downloadable resume
+- Added a personal touch to the About Me section
+- Improved spacing, colors, and readability in both light and dark modes
+- Made the site easier to browse on phones and iPads
+
+## Other Content Updates
 
 - Refined the About section with broader experience wording and a new optimized profile avatar
 - Tightened the skills, expertise cards, organizations, and experience copy for a more consistent professional tone
@@ -71,7 +92,7 @@ Additional libraries and integrations used in the site:
 * Coding Dojo
 * Adobe
 
-## Changes - April 2026
+## Earlier Changes - April 2026
 
 * Updated site structure and fixed broken HTML section nesting
 * Added cherry blossom day/night theme support with a persistent toggle

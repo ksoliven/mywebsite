@@ -118,8 +118,8 @@
 			<span class="petal petal-12"></span>
 		</div>
 		<div class="container-wrap">
-			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
-				aria-expanded="false" aria-controls="navbar"><i></i></a>
+			<button type="button" class="js-colorlib-nav-toggle colorlib-nav-toggle"
+				aria-label="Open navigation" aria-expanded="false" aria-controls="colorlib-aside"><i aria-hidden="true"></i></button>
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
 					<div class="author-img" style="background-image: url(images/profile-avatar.png);"></div>
@@ -229,6 +229,11 @@
 										<div class="about-desc">
 											<span class="heading-meta">About Me</span>
 											<h2 class="colorlib-heading">Who Am I?</h2>
+											<div class="about-illustration">
+												<img src="images/about-cherry-blossoms.png"
+													alt="Illustration of a person overlooking the Washington Monument, framed by cherry blossoms."
+													width="1254" height="1254" loading="lazy" decoding="async">
+											</div>
 											<p><strong>Hi, I'm Kate Soliven</strong>. I have several years of experience spanning
 												systems engineering and software engineering, with additional strengths in
 												project management and quality assurance. I currently work as a Staff
@@ -413,6 +418,58 @@
 									Docker.</p>
 							</div>
 							<br>
+						</div>
+						<!-- AI Skills -->
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<h2 class="colorlib-heading animate-box">AI Skills</h2>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Codex</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" aria-label="Codex" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Copilot</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" aria-label="Copilot" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Devin</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" aria-label="Devin" style="width:60%">
+											<span>60%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Windsurf</h3>
+									<div class="progress">
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
+											aria-valuemin="0" aria-valuemax="100" aria-label="Windsurf" style="width:60%">
+											<span>60%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="padding-top: 20px;">
 							<!-- Languages -->
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<h2 class="colorlib-heading animate-box">Languages</h2>
@@ -420,49 +477,6 @@
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
 									<h3>C#</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>CSS</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Javascript (ES5 and ES6)</h3>
 									<div class="progress">
 										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
@@ -473,9 +487,52 @@
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
+									<h3>CSS</h3>
+									<div class="progress">
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>CSS3</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>HTML5</h3>
+									<div class="progress">
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+											aria-valuemin="0" aria-valuemax="100" style="width:85%">
+											<span>85%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>Javascript (ES5 and ES6)</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
 									<h3>Python</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -486,7 +543,7 @@
 								<div class="progress-wrap">
 									<h3>Sass</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="50"
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="50"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -497,7 +554,7 @@
 								<div class="progress-wrap">
 									<h3>TypeScript</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -513,7 +570,7 @@
 								<div class="progress-wrap">
 									<h3>Ajax</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="45"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="45"
 											aria-valuemin="0" aria-valuemax="100" style="width:45%">
 											<span>45%</span>
 										</div>
@@ -524,7 +581,7 @@
 								<div class="progress-wrap">
 									<h3>Bootstrap</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -535,7 +592,7 @@
 								<div class="progress-wrap">
 									<h3>jQuery</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>80%</span>
 										</div>
@@ -546,7 +603,7 @@
 								<div class="progress-wrap">
 									<h3>Kendo UI</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
 											aria-valuemin="0" aria-valuemax="100" style="width:60%">
 											<span>60%</span>
 										</div>
@@ -557,7 +614,7 @@
 								<div class="progress-wrap">
 									<h3>Leaflet</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
 											 aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -568,7 +625,7 @@
 								<div class="progress-wrap">
 									<h3>Mongoose</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -579,7 +636,7 @@
 								<div class="progress-wrap">
 									<h3>React</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -590,7 +647,7 @@
 								<div class="progress-wrap">
 									<h3>SocketIO</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="40"
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="40"
 											aria-valuemin="0" aria-valuemax="100" style="width:40%">
 											<span>40%</span>
 										</div>
@@ -601,7 +658,7 @@
 								<div class="progress-wrap">
 									<h3>Yeoman</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -617,7 +674,7 @@
 								<div class="progress-wrap">
 									<h3>Angular</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -628,7 +685,7 @@
 								<div class="progress-wrap">
 									<h3>AngularJS</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="60"
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
 											aria-valuemin="0" aria-valuemax="100" style="width:60%">
 											<span>60%</span>
 										</div>
@@ -639,7 +696,7 @@
 								<div class="progress-wrap">
 									<h3>ASP.net</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -650,7 +707,7 @@
 								<div class="progress-wrap">
 									<h3>Django</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -661,7 +718,7 @@
 								<div class="progress-wrap">
 									<h3>Entity Framework (EF) Core</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -672,7 +729,7 @@
 								<div class="progress-wrap">
 									<h3>Express</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -683,7 +740,7 @@
                             <div class="progress-wrap">
                                 <h3>FastAPI</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
+                                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
                                          aria-valuemin="0" aria-valuemax="100" style="width:75%">
                                         <span>75%</span>
                                     </div>
@@ -694,7 +751,7 @@
 								<div class="progress-wrap">
 									<h3>Flask</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="45"
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="45"
 											aria-valuemin="0" aria-valuemax="100" style="width:45%">
 											<span>45%</span>
 										</div>
@@ -705,7 +762,7 @@
                             <div class="progress-wrap">
                                 <h3>NestJS</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
+                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
                                          aria-valuemin="0" aria-valuemax="100" style="width:60%">
                                         <span>60%</span>
                                     </div>
@@ -716,7 +773,7 @@
 								<div class="progress-wrap">
 									<h3>Nodejs</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -727,7 +784,7 @@
                                 <div class="progress-wrap">
                                     <h3>SharePoint Framework (SPFx)</h3>
                                     <div class="progress">
-                                        <div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
+                                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
                                              aria-valuemin="0" aria-valuemax="100" style="width:75%">
                                             <span>75%</span>
                                         </div>
@@ -738,7 +795,7 @@
 								<div class="progress-wrap">
 									<h3>SQLAlchemy</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -754,7 +811,7 @@
 								<div class="progress-wrap">
 									<h3>Atom</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -765,7 +822,7 @@
 								<div class="progress-wrap">
 									<h3>AWS EC2</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -776,7 +833,7 @@
 								<div class="progress-wrap">
 									<h3>Azure Dev Ops</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -787,7 +844,7 @@
                             <div class="progress-wrap">
                                 <h3>Docker</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
                                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
                                         <span>70%</span>
                                     </div>
@@ -798,7 +855,7 @@
                             <div class="progress-wrap">
                                 <h3>Github</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+                                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
                                          aria-valuemin="0" aria-valuemax="100" style="width:80%">
                                         <span>80%</span>
                                     </div>
@@ -809,7 +866,7 @@
 								<div class="progress-wrap">
 									<h3>GitLab</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
 											aria-valuemin="0" aria-valuemax="100" style="width:80%">
 											<span>80%</span>
 										</div>
@@ -820,7 +877,7 @@
 								<div class="progress-wrap">
 									<h3>JetBrains</h3>
 									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
 											 aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -829,9 +886,20 @@
 							</div>
                         <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
                             <div class="progress-wrap">
+                                <h3>Mermaid</h3>
+                                <div class="progress">
+                                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+                                         aria-valuemin="0" aria-valuemax="100" aria-label="Mermaid" style="width:80%">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+                            <div class="progress-wrap">
                                 <h3>PgAdmin</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
                                          aria-valuemin="0" aria-valuemax="100" style="width:70%">
                                         <span>70%</span>
                                     </div>
@@ -842,7 +910,7 @@
 								<div class="progress-wrap">
 									<h3>Postman</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -853,7 +921,7 @@
 								<div class="progress-wrap">
 									<h3>Swagger</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -864,7 +932,7 @@
 								<div class="progress-wrap">
 									<h3>Visual Studio Code</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
 											aria-valuemin="0" aria-valuemax="100" style="width:90%">
 											<span>90%</span>
 										</div>
@@ -880,7 +948,7 @@
 								<div class="progress-wrap">
 									<h3>MongoDB</h3>
 									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
+										<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
 											aria-valuemin="0" aria-valuemax="100" style="width:75%">
 											<span>75%</span>
 										</div>
@@ -891,7 +959,7 @@
                             <div class="progress-wrap">
                                 <h3>PostgreSQL</h3>
                                 <div class="progress">
-                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="65"
+                                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="65"
                                          aria-valuemin="0" aria-valuemax="100" style="width:65%">
                                         <span>65%</span>
                                     </div>
@@ -902,7 +970,7 @@
 								<div class="progress-wrap">
 									<h3>mySQL</h3>
 									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -913,7 +981,7 @@
 								<div class="progress-wrap">
 									<h3>SQLlite</h3>
 									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 											aria-valuemin="0" aria-valuemax="100" style="width:70%">
 											<span>70%</span>
 										</div>
@@ -924,7 +992,7 @@
 								<div class="progress-wrap">
 									<h3>SQL Server 2019</h3>
 									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
+										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
 											aria-valuemin="0" aria-valuemax="100" style="width:60%">
 											<span>60%</span>
 										</div>
@@ -935,7 +1003,7 @@
 								<div class="progress-wrap">
 									<h3>SQL Workbench</h3>
 									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
 											aria-valuemin="0" aria-valuemax="100" style="width:60%">
 											<span>60%</span>
 										</div>
@@ -950,7 +1018,7 @@
 									<div class="progress-wrap">
 										<h3>Jasmine</h3>
 										<div class="progress">
-											<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
+											<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
 												aria-valuemin="0" aria-valuemax="100" style="width:70%">
 												<span>70%</span>
 											</div>
@@ -961,7 +1029,7 @@
 									<div class="progress-wrap">
 										<h3>Jest</h3>
 										<div class="progress">
-											<div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
+											<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
 												aria-valuemin="0" aria-valuemax="100" style="width:60%">
 												<span>60%</span>
 											</div>
@@ -972,7 +1040,7 @@
 									<div class="progress-wrap">
 										<h3>Vitest</h3>
 										<div class="progress">
-											<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
+											<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
 												aria-valuemin="0" aria-valuemax="100" style="width:70%">
 												<span>70%</span>
 											</div>
@@ -983,7 +1051,7 @@
 									<div class="progress-wrap">
 										<h3>Pytest</h3>
 										<div class="progress">
-											<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
+											<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
 												aria-valuemin="0" aria-valuemax="100" style="width:70%">
 												<span>70%</span>
 											</div>
@@ -994,7 +1062,7 @@
 									<div class="progress-wrap">
 										<h3>Xunit</h3>
 										<div class="progress">
-											<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
+											<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
 												aria-valuemin="0" aria-valuemax="100" style="width:70%">
 												<span>70%</span>
 											</div>
@@ -1440,6 +1508,7 @@
 														Booz Allen Hamilton</a> <span>2022 - Present</span></h2>
 												<b>Internal Project</b>
 												<ul>
+													<li>Contributed to 20+ repositories.</li>
 													<li>Developed frontend features using Angular, TypeScript, HTML, SASS, and Leaflet to support complex, data-driven user interfaces.</li>
 													<li>Built and maintained backend services using Python (FastAPI) and NestJS, integrating relational data with PostgreSQL.</li>
 													<li>Integrated machine learning inference services into web applications through API-based workflows.</li>
@@ -1780,12 +1849,12 @@
 										<i class="icon-phone"></i>
 									</div>
 									<div class="colorlib-text">
-										<p><a href="tel:1+410-693-2722">Give me a call</a></p>
+										<p><a href="tel:+14106932722">Give me a call</a></p>
 									</div>
 								</div>
 							</div>
 							<!-- Implemented Captcha and Emailjs library -->
-							<div class="col-md-7 col-md-push-1">
+							<div class="col-md-7">
 								<div class="row">
 									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
 										data-animate-effect="fadeInRight">
@@ -1793,15 +1862,15 @@
 											<div class="form-group">
 												<input type="hidden" name="contact_number">
 												<input type="text" name="user_name" id="user_name" class="form-control"
-													placeholder="Name" required>
+													placeholder="Name" autocomplete="name" aria-label="Name" required>
 											</div>
 											<div class="form-group">
-												<input type="text" name="user_email" id="user_email"
-													class="form-control" placeholder="Email" required>
+												<input type="email" name="user_email" id="user_email"
+													class="form-control" placeholder="Email" autocomplete="email" aria-label="Email" required>
 											</div>
 											<div class="form-group">
 												<textarea name="message" id="message" cols="30" rows="7"
-													class="form-control" placeholder="Message" required></textarea>
+													class="form-control" placeholder="Message" aria-label="Message" required></textarea>
 											</div>
 											<div class="form-group">
 												<input type="submit" class="btn btn-primary btn-send-message"
