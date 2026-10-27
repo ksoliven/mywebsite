@@ -28,8 +28,6 @@ Additional libraries and integrations used in the site:
 
 [<img src="https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white">](https://www.adobe.com/products/illustrator/campaign/pricing.html?sdid=KKQML&mv=search&ef_id=EAIaIQobChMI0d2RuZ6mhAMVAHFHAR1IagCzEAAYASAAEgLP5_D_BwE:G:s&s_kwcid=AL!3085!3!356518781933!e!!g!!illustrator!1711729586!70905759350&gad_source=1) [<img src="https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black">](https://www.adobe.com/products/photoshop/landpa.html?sdid=P79NQKGF&mv=search&mv2=paidsearch&ef_id=EAIaIQobChMIt9DYjZ6mhAMVBWtHAR2hAQRuEAAYASAAEgIQp_D_BwE:G:s&s_kwcid=AL!3085!3!673842496258!e!!g!!photoshop!1712238394!67643541820&mv=search&gad_source=1) 
 
-Mermaid is listed at 80% under Developer Tools for diagrams as code in systems and software engineering.
-
 ## Wireframing
 
 [<img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">](https://www.figma.com/) 
