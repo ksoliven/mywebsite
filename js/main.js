@@ -113,16 +113,38 @@
 	};
 
 
+	// Keep section navigation smooth without waiting for staggered content reveals.
+	var openSection = function(sectionName) {
+		var section = document.querySelector('[data-section="' + sectionName + '"]');
+		if (!section) return false;
+		section.classList.add('section-open-immediately');
+		$(section).find('.animate-box').removeClass('item-animate').addClass('animated');
+		$('html, body').stop(true);
+		setMenuOpen(false);
+		var destination = Math.max(0, $(section).offset().top - 24);
+		if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+			window.scrollTo({ top: destination, behavior: 'instant' });
+		} else {
+			$('html, body').animate({ scrollTop: destination }, 360, 'swing', function() {
+				navActive(sectionName);
+			});
+		}
+		section.setAttribute('tabindex', '-1');
+		section.focus({ preventScroll: true });
+		navActive(sectionName);
+		return true;
+	};
+
+	document.addEventListener('portfolio:navigate', function(event) {
+		if (openSection(event.detail.section)) event.preventDefault();
+	});
+
 	var clickMenu = function() {
 
 		$('#navbar a:not([class="external"])').click(function(event){
 			var section = $(this).data('nav-section');
 
-				if ( $('[data-section="' + section + '"]').length ) {
-			    	$('html, body').animate({
-			        	scrollTop: $('[data-section="' + section + '"]').offset().top - 55
-			    	}, 500);
-			   }
+			openSection(section);
 
 			setMenuOpen(false);
 

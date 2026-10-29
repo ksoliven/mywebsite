@@ -395,3 +395,96 @@
 [class^=awn-] {
     box-sizing: border-box
 }
+/* Portfolio theme: shared surfaces and typography, with distinct status accents. */
+#awn-toast-container {
+    top: max(20px, env(safe-area-inset-top));
+    right: max(16px, env(safe-area-inset-right));
+    bottom: auto;
+    max-height: calc(100dvh - 40px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 4px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#awn-toast-container .awn-toast {
+    --toast-accent: var(--theme-accent-strong);
+    width: min(360px, calc(100vw - 40px));
+    margin: 0 0 12px;
+    background: var(--theme-bg-secondary);
+    color: var(--theme-text);
+    border: 1px solid var(--theme-line);
+    border-left: 3px solid var(--toast-accent);
+    border-radius: 16px;
+    box-shadow: 0 8px 24px var(--theme-glow);
+    animation-name: portfolio-toast-enter;
+    animation-timing-function: ease-out;
+    left: 0;
+    right: auto;
+}
+
+#awn-toast-container .awn-toast-success { --toast-accent: #42735b; }
+#awn-toast-container .awn-toast-alert { --toast-accent: #ad405e; }
+#awn-toast-container .awn-toast-warning { --toast-accent: #956214; }
+html[data-theme="night"] #awn-toast-container .awn-toast-success { --toast-accent: #a4d4b7; }
+html[data-theme="night"] #awn-toast-container .awn-toast-alert { --toast-accent: #ffabc1; }
+html[data-theme="night"] #awn-toast-container .awn-toast-warning { --toast-accent: #edca8e; }
+
+#awn-toast-container .awn-toast-wrapper {
+    border: 0;
+    border-radius: inherit;
+    padding: 18px 58px 18px 18px;
+}
+
+#awn-toast-container .awn-toast-label {
+    color: var(--toast-accent);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 1.4;
+    margin-bottom: 5px;
+    text-transform: none;
+}
+
+#awn-toast-container .awn-toast-content {
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#awn-toast-container .awn-toast-icon {
+    top: 0;
+    right: 18px;
+}
+
+#awn-toast-container .awn-toast-icon .fa {
+    color: var(--toast-accent);
+    font-size: 24px;
+}
+
+#awn-toast-container .awn-toast-progress-bar,
+#awn-toast-container .awn-toast-progress-bar:after {
+    top: auto;
+    bottom: 0;
+    height: 3px;
+}
+
+#awn-toast-container .awn-toast-progress-bar:after {
+    background: var(--toast-accent);
+    opacity: .5;
+}
+
+@keyframes portfolio-toast-enter {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+    #awn-toast-container { top: max(12px, env(safe-area-inset-top)); }
+    #awn-toast-container .awn-toast-wrapper { padding: 16px 52px 16px 14px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #awn-toast-container .awn-toast { animation-duration: .01ms !important; }
+    #awn-toast-container .fa-spin { animation: none; }
+}

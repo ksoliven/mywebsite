@@ -41,9 +41,9 @@
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Switch Icons -->
-	<link rel="stylesheet" href="css/switch.css?v=20261027">
+	<link rel="stylesheet" href="css/switch.css?v=20261029-nav">
 	<!-- Awesome notifications css -->
-	<link rel="stylesheet" type="text/css" href="css/awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/awesome.css?v=20261029-theme">
 	<!-- Switch Icon API-->
 	<script src="https://kit.fontawesome.com/9680114bd9.js" crossorigin="anonymous"></script>
 	<script>
@@ -57,39 +57,6 @@
 	</script>
 	<!-- Emailjs integration -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-	<script type="text/javascript">
-		(function () {
-			// https://dashboard.emailjs.com/admin/account
-			emailjs.init('iSPaNrHIO21mz9-u3');
-		})();
-	</script>
-	<script type="text/javascript">
-		window.onload = function () {
-			document.getElementById('contact-form').addEventListener('submit', function (event) {
-				event.preventDefault();
-				// generate a five digit number for the contact_number variable
-				this.contact_number.value = Math.random() * 100000 | 0;
-				// these IDs from the previous steps
-				emailjs.sendForm('service_nzt1uxp', 'template_fbzuim3', this)
-					.then(function () {
-						new AWN().success('Message successfully sent', {
-							durations: {
-								success: 1000
-							}
-						});
-						document.getElementById('contact-form').reset();
-						grecaptcha.reset();
-					}, function (error) {
-						new AWN().alert(
-							'Message failure. Please contact me by phone or email instead. Thank you', {
-								duration: {
-									alert: 1000
-								}
-							});
-					});
-			});
-		}
-	</script>
 
 
 	<!-- Modernizr JS -->
@@ -99,6 +66,7 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+	<link rel="stylesheet" href="css/chat.css?v=20261029-4">
 </head>
 
 <body>
@@ -419,10 +387,10 @@
 							</div>
 							<br>
 						</div>
-						<!-- AI Skills -->
+						<!-- AI Tools -->
 						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">AI Skills</h2>
+								<h2 class="colorlib-heading animate-box">AI Tools</h2>
 							</div>
 							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="progress-wrap">
@@ -1876,9 +1844,10 @@
 												<input type="submit" class="btn btn-primary btn-send-message"
 													value="Send">
 											</div>
-											<!-- Captcha needs to implemented here as it's an outer div -->
-											<div class="g-recaptcha"
+											<!-- EmailJS requires a completed reCAPTCHA v2 token. -->
+											<div id="contact-captcha"
 												data-sitekey="6LcP1cApAAAAAPOX01gNTbOXqKM_mzJlJOPDDJB8"></div>
+											<p id="contact-status" class="sr-only" role="status" aria-live="polite"></p>
 										</form>
 									</div>
 
@@ -1924,13 +1893,48 @@
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 	<!-- MAIN JS -->
-	<script src="js/main.js"></script>
+	<script src="js/main.js?v=20261029-nav2"></script>
 	<!-- Vanilla toast js -->
 	<script src="js/index.var.js"></script>
 	<!-- Hover -->
 	<script src="js/hover.js"></script>
 	<!-- Captcha -->
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<script src="js/contact.js?v=20261029-3"></script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onContactCaptchaReady&amp;render=explicit" async defer></script>
+
+
+	<aside class="portfolio-chat" aria-label="Portfolio assistant" hidden>
+		<section id="portfolio-chat-panel" class="chat-panel" aria-labelledby="portfolio-chat-title" hidden>
+			<div class="chat-header">
+				<h2 id="portfolio-chat-title">Ask about Kate</h2>
+				<button class="chat-close" type="button" aria-label="Close chat">×</button>
+			</div>
+			<details class="chat-info">
+				<summary>About this AI chat</summary>
+				<p>Questions are sent to Cloudflare Workers AI. Answers may be inaccurate. Each question is sent separately; the chat clears on reload.</p>
+			</details>
+			<div class="chat-messages" role="log" aria-live="polite" aria-relevant="additions" aria-label="Conversation">
+				<p class="chat-message" data-role="assistant">Ask a question about Kate, or use the shortcuts below to explore her portfolio.</p>
+			</div>
+			<div class="chat-verification"></div>
+			<p class="chat-verification-status chat-note" role="status"></p>
+			<form class="chat-form">
+				<label class="chat-input-label" for="chat-question">Your question</label>
+				<div class="chat-input-row">
+					<input id="chat-question" name="message" type="text" maxlength="500" required autocomplete="off" placeholder="Ask about Kate…">
+					<button class="chat-send" type="submit">Send</button>
+				</div>
+			</form>
+			<nav class="chat-resources" aria-label="Quick portfolio links">
+				<a href="#experience" data-chat-section="experience">Experience</a>
+				<a href="documents/ksoliven.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+				<a href="#work" data-chat-section="work">Projects</a>
+				<a href="#contact" data-chat-section="contact">Contact</a>
+			</nav>
+		</section>
+		<button class="chat-toggle" type="button" aria-expanded="false" aria-controls="portfolio-chat-panel">Ask about Kate</button>
+	</aside>
+	<script src="js/chat.js?v=20261029-6" defer></script>
 
 </body>
 

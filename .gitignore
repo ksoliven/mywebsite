@@ -1,0 +1,13 @@
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+
+# Wrangler local state, caches, and dependencies
+.wrangler/
+node_modules/
+
+# Local operating-system files
+.DS_Store

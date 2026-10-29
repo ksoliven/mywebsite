@@ -101,3 +101,17 @@ To preview, serve the repository with `python3 -m http.server 8000` and open `ht
 * Updated mobile styling and responsive behavior
 * Refined dark mode readability across portfolio, certifications, organizations, and contact sections
 * Updated portfolio copy, section labels, education, and experience content to better match the current site
+
+## Portfolio Chat Skeleton
+
+The “Ask about Kate” widget uses `css/chat.css` and `js/chat.js`. It connects to a separately deployed Cloudflare Worker using Workers AI. Set `CHAT_ENDPOINT` to an empty string to use fixed local demo replies without network requests. Serve the site using the preview command above, then try custom questions, the close button, Escape key, and the direct Experience, Projects, Résumé, and Contact shortcuts. The shortcuts do not call AI and remain available during verification or chat requests. Check both themes and narrow screens. The displayed conversation lives in page memory and disappears on reload; submitted questions and verification tokens are sent to Cloudflare.
+
+Backend integration details:
+
+1. Deploy a serverless endpoint and set `CHAT_ENDPOINT` in `js/chat.js` to its URL (for example, `/api/chat` when hosted on the same origin). Static hosting alone cannot run this endpoint.
+2. Accept a JSON POST body of `{ "message": "What experience does Kate have?" }` and return `{ "reply": "Your answer here" }`. The widget sends the current question plus a single-use `turnstileToken`; conversation history is not sent.
+3. Keep the provider API key in server environment variables. Validate input on the server, enforce request and spending limits, and configure CORS for the portfolio origin if using a separate backend.
+4. Supply reviewed portfolio/résumé content to the model. Instruct it to use that content, avoid guessing, and direct unanswered questions to Kate’s contact section.
+5. Update the demo notice in `index.html` to describe the connected service and its actual message handling before enabling the endpoint.
+
+The frontend displays replies as plain text, handles failed requests, and cancels requests after 20 seconds. The deployed Worker is managed separately in Cloudflare. Protected Worker code, rate limiter configuration, and setup instructions are in [worker/README.md](worker/README.md). Add the public Turnstile site key to the frontend and deploy the protected Worker before publishing these changes. Streaming, persistent storage, and job-description analysis are left for a later implementation.

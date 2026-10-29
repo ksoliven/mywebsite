@@ -1687,3 +1687,10 @@ html[data-theme="night"] .about-illustration img {
     animation: none !important;
   }
 }
+
+/* Clicked section destinations appear immediately, including queued reveal items. */
+.section-open-immediately .animate-box {
+  opacity: 1 !important;
+  animation: none !important;
+  transform: none !important;
+}
