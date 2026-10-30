@@ -1,5 +1,6 @@
 const ORIGINS = new Set(['https://katedevdc.com', 'https://www.katedevdc.com', 'http://localhost:8000', 'http://localhost:63342']);
 const FACTS = `Kate Soliven works in systems and software engineering. Her current employer is Booz Allen Hamilton, where she has worked as a Staff Engineer since 2022 (2022–Present in her portfolio). Her previous employer was Zekiah Technologies Inc., where she was a Full Stack Software Developer from 2020 to 2022. Her Booz Allen portfolio entry includes internal work and client work supporting the United States Space Force and NASA. She has experience with Agile development, and JavaScript, TypeScript, NestJS, Python, PostgreSQL, FastAPI, Angular, React, Swagger, and Docker.
+Certifications listed on the portfolio: INCOSE Associate Systems Engineering Professional (ASEP), certification number 13329, valid through October 31, 2031; Palantir Foundry & AIP Builder Foundations, issued June 18, 2026; AWS Cloud Practitioner, earned August 2022; and CompTIA Security+, earned January 2021. Renewal/expiration dates for AWS and Security+ are not confirmed.
 Portfolio: https://katedevdc.com
 Résumé: https://katedevdc.com/documents/ksoliven.pdf
 GitHub: https://github.com/ksoliven
