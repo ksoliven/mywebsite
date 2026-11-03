@@ -1,33 +1,39 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<meta https-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Kate Dev DC</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kate Soliven | Software &amp; Systems Engineering</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" />
+	<meta name="description" content="Kate Soliven is a Staff Engineer based in the Washington, DC metro area. Explore her software and systems engineering experience, projects, technical skills, and résumé.">
+	<meta name="author" content="Kate Soliven">
+	<link rel="canonical" href="https://katedevdc.com/">
 
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+	<!-- Search and social sharing -->
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Kate Soliven | Software &amp; Systems Engineering">
+	<meta property="og:description" content="Software and systems engineering portfolio: experience, projects, skills, and résumé. Based in the Washington, DC metro area.">
+	<meta property="og:url" content="https://katedevdc.com/">
+	<meta property="og:site_name" content="Kate Dev DC">
+	<meta property="og:image" content="https://katedevdc.com/images/about-cherry-blossoms.webp">
+	<meta property="og:image:width" content="640">
+	<meta property="og:image:height" content="640">
+	<meta property="og:image:alt" content="Washington Monument framed by cherry blossoms, from Kate Soliven’s portfolio.">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Kate Soliven | Software &amp; Systems Engineering">
+	<meta name="twitter:description" content="Explore Kate Soliven’s software and systems engineering experience, projects, skills, and résumé.">
+	<meta name="twitter:image" content="https://katedevdc.com/images/about-cherry-blossoms.webp">
+	<meta name="twitter:image:alt" content="Washington Monument framed by cherry blossoms.">
 
 	<!-- Profile avatar favicon and mobile bookmark icon -->
 	<link rel="icon" href="favicon.ico?v=20261030" sizes="any">
 	<link rel="icon" type="image/png" href="images/favicon-16x16.png?v=20261030" sizes="16x16">
 	<link rel="icon" type="image/png" href="images/favicon-32x32.png?v=20261030" sizes="32x32">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=20261030" sizes="180x180">
-	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700%7CPlayfair+Display:400,400i,700&amp;display=swap" rel="stylesheet">
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -37,17 +43,12 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- Flexslider  -->
 	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<!-- Theme style  -->
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Switch Icons -->
-	<link rel="stylesheet" href="css/switch.css?v=20261029-nav">
+	<link rel="stylesheet" href="css/switch.css?v=20261103-contact-alignment">
 	<!-- Awesome notifications css -->
 	<link rel="stylesheet" type="text/css" href="css/awesome.css?v=20261029-theme">
-	<!-- Switch Icon API-->
-	<script src="https://kit.fontawesome.com/9680114bd9.js" crossorigin="anonymous"></script>
 	<script>
 		(function () {
 			var storedTheme = null;
@@ -57,8 +58,7 @@
 			document.documentElement.setAttribute('data-theme', storedTheme === 'night' ? 'night' : 'blossom');
 		})();
 	</script>
-	<!-- Emailjs integration -->
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<!-- Contact services load on demand in js/contact.js. -->
 
 
 	<!-- Modernizr JS -->
@@ -75,26 +75,20 @@
 	<div id="colorlib-page">
 		<div class="petal-field" aria-hidden="true">
 			<span class="petal petal-1"></span>
-			<span class="petal petal-2"></span>
 			<span class="petal petal-3"></span>
-			<span class="petal petal-4"></span>
 			<span class="petal petal-5"></span>
-			<span class="petal petal-6"></span>
 			<span class="petal petal-7"></span>
-			<span class="petal petal-8"></span>
 			<span class="petal petal-9"></span>
-			<span class="petal petal-10"></span>
 			<span class="petal petal-11"></span>
-			<span class="petal petal-12"></span>
 		</div>
 		<div class="container-wrap">
 			<button type="button" class="js-colorlib-nav-toggle colorlib-nav-toggle"
 				aria-label="Open navigation" aria-expanded="false" aria-controls="colorlib-aside"><i aria-hidden="true"></i></button>
 			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
 				<div class="text-center">
-					<div class="author-img" style="background-image: url(images/profile-avatar.png);"></div>
+					<div class="author-img" style="background-image: url(images/profile-avatar.webp);"></div>
 					<h1 id="colorlib-logo"><a href="index.html">Kate Soliven</a></h1>
-					<span class="position">Staff Engineer in Washington DC</span>
+					<span class="position">Staff Engineer in the DC metro area</span>
 				</div>
 				<nav id="colorlib-main-menu" role="navigation" class="navbar">
 					<div id="navbar" class="collapse">
@@ -119,30 +113,22 @@
 					<button class="theme-switch" id="theme-switch" type="button" aria-label="Switch color theme"
 						aria-pressed="false">
 						<span class="theme-switch-orb" aria-hidden="true"></span>
-						<span class="theme-switch-icon theme-switch-sun" aria-hidden="true"><i class="fas fa-sun"></i></span>
+						<span class="theme-switch-icon theme-switch-sun" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></span>
 						<span class="theme-switch-copy">
 							<span class="theme-switch-state">Day Bloom</span>
 						</span>
-						<span class="theme-switch-icon theme-switch-moon" aria-hidden="true"><i class="fas fa-moon"></i></span>
+						<span class="theme-switch-icon theme-switch-moon" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.9 14.1A9 9 0 0 1 9.9 3.1 9 9 0 1 0 20.9 14.1Z"/></svg></span>
 					</button>
 				</div>
 				<div class="colorlib-footer">
-					<p><small>&copy;
-							Copyright &copy;
-							<script>
-								document.write(new Date().getFullYear());
-							</script> All rights reserved
-						</small></p>
 					<ul>
-						<li><a href="https://katedevblog.com/" target="_blank" rel="noopener noreferrer" class="social-link"><i
+						<li><a href="https://katedevblog.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Blog"><i
 									class="icon-blogger"></i></a></li>
-						<li><a href="https://github.com/ksoliven" target="_blank" rel="noopener noreferrer" class="social-link"><i
+						<li><a href="https://github.com/ksoliven" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i
 									class="icon-github"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/kate-soliven-949706100" target="_blank" rel="noopener noreferrer"
-								class="social-link"><i class="icon-linkedin2"></i></a></li>
+								class="social-link" aria-label="LinkedIn"><i class="icon-linkedin2"></i></a></li>
 					</ul>
-					<br>
-					<img src="qr/QR.png" style="width: 76px; height: 76px">
 				</div>
 			</aside>
 
@@ -150,7 +136,7 @@
 				<section id="colorlib-hero" class="js-fullheight" data-section="home">
 					<div class="flexslider js-fullheight">
 						<ul class="slides">
-							<li style="background-image: url(images/cherry-4.png);">
+							<li style="background-image: url(images/cherry-4.webp);">
 								<div class="overlay"></div>
 								<div class="container-fluid">
 									<div class="row">
@@ -168,7 +154,7 @@
 									</div>
 								</div>
 							</li>
-							<li style="background-image: url(images/clean-bg.png);">
+							<li style="background-image: url(images/clean-bg.webp);">
 								<div class="overlay"></div>
 								<div class="container-fluid">
 									<div class="row">
@@ -200,7 +186,7 @@
 											<span class="heading-meta">About Me</span>
 											<h2 class="colorlib-heading">Who Am I?</h2>
 											<div class="about-illustration">
-												<img src="images/about-cherry-blossoms.png"
+												<img src="images/about-cherry-blossoms.webp"
 													alt="Illustration of a person overlooking the Washington Monument, framed by cherry blossoms."
 													width="320" height="320" style="max-width: 100%; width: 320px; height: auto;" loading="lazy" decoding="async">
 											</div>
@@ -331,8 +317,8 @@
 								<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 									<span class="heading-meta">Clients</span>
 									<h2 class="colorlib-heading">Organizations Supported</h2>
-									<img src="images/clients-gtri.png" alt="Organizations supported"
-										style="width: 100%; max-width: 1000px; margin-bottom: 100px;">
+									<img src="images/clients-gtri.png" alt="Organizations supported" loading="lazy" decoding="async" width="1200" height="660"
+										style="width: 100%; max-width: 1000px; height: auto;">
 								</div>
 							</div>
 						</div>
@@ -374,991 +360,788 @@
 				<section class="colorlib-skills" data-section="skills">
 					<div class="colorlib-narrow-content">
 						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Technical Expertise</span>
-								<h2 class="colorlib-heading animate-box">Core Skills</h2>
-							</div>
-						</div>
-						<div class="row">
 							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Technical Expertise</span>
+								<h2 class="colorlib-heading">Core Skills</h2>
 								<p>I have experience across Agile development, systems engineering, and software
 									engineering. In my current role as a Staff Engineer, I work with JavaScript,
 									TypeScript, NestJS, Python, PostgreSQL, FastAPI, Angular, React, Swagger, and
 									Docker.</p>
-							</div>
-							<br>
-						</div>
-						<!-- AI Tools -->
-						<div class="row">
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">AI Tools</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Codex</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" aria-label="Codex" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Copilot</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" aria-label="Copilot" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Devin</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" aria-label="Devin" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Windsurf</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" aria-label="Windsurf" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
+								<p class="skills-hint">Select a category to show or hide its skills.</p>
 							</div>
 						</div>
-						<div class="row" style="padding-top: 20px;">
-							<!-- Languages -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Languages</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>C#</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>CSS</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Javascript (ES5 and ES6)</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Python</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Sass</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="50"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>TypeScript</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<!-- Front End Libraries -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Front End Libraries</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Ajax</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="45"
-											aria-valuemin="0" aria-valuemax="100" style="width:45%">
-											<span>45%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Bootstrap</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>jQuery</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Kendo UI</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Leaflet</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="75"
-											 aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Mongoose</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>React</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>SocketIO</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="40"
-											aria-valuemin="0" aria-valuemax="100" style="width:40%">
-											<span>40%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Yeoman</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<!-- Frameworks -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Frameworks</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Angular</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>AngularJS</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>ASP.net</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Django</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Entity Framework (EF) Core</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Express</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                            <div class="progress-wrap">
-                                <h3>FastAPI</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                        <span>75%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Flask</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="45"
-											aria-valuemin="0" aria-valuemax="100" style="width:45%">
-											<span>45%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                            <div class="progress-wrap">
-                                <h3>NestJS</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="60"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        <span>60%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Nodejs</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                            <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                                <div class="progress-wrap">
-                                    <h3>SharePoint Framework (SPFx)</h3>
-                                    <div class="progress">
-                                        <div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
-                                             aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                            <span>75%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>SQLAlchemy</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<!-- Developer Tools -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Developer Tools</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Atom</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>AWS EC2</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Azure Dev Ops</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="progress-wrap">
-                                <h3>Docker</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-                            <div class="progress-wrap">
-                                <h3>Github</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>GitLab</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>JetBrains</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
-											 aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="progress-wrap">
-                                <h3>Mermaid</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-                                         aria-valuemin="0" aria-valuemax="100" aria-label="Mermaid" style="width:80%">
-                                        <span>80%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="progress-wrap">
-                                <h3>PgAdmin</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:70%">
-                                        <span>70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Postman</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Swagger</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Visual Studio Code</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Database</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>MongoDB</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-                        <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-                            <div class="progress-wrap">
-                                <h3>PostgreSQL</h3>
-                                <div class="progress">
-                                    <div class="progress-bar color-5" role="progressbar" aria-valuenow="65"
-                                         aria-valuemin="0" aria-valuemax="100" style="width:65%">
-                                        <span>65%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>mySQL</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>SQLlite</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>SQL Server 2019</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>SQL Workbench</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
-									<h2 class="colorlib-heading animate-box">Unit Testing</h2>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>Jasmine</h3>
-										<div class="progress">
-											<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-												aria-valuemin="0" aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="progress-wrap">
-										<h3>Jest</h3>
-										<div class="progress">
-											<div class="progress-bar color-5" role="progressbar" aria-valuenow="60"
-												aria-valuemin="0" aria-valuemax="100" style="width:60%">
-												<span>60%</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>Vitest</h3>
-										<div class="progress">
-											<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-												aria-valuemin="0" aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="progress-wrap">
-										<h3>Pytest</h3>
-										<div class="progress">
-											<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-												aria-valuemin="0" aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>Xunit</h3>
-										<div class="progress">
-											<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-												aria-valuemin="0" aria-valuemax="100" style="width:70%">
-												<span>70%</span>
-											</div>
-										</div>
-									</div>
-									<br>
-								</div>
-								<br>
-								<div class="col-md-12 animate-box" data-animate-effect="fadeInRight">
-									<h2 class="colorlib-heading animate-box">Cloud Computing</h2>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-									<div class="progress-wrap">
-										<h3>OpenShift</h3>
-										<div class="progress">
-											<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-												aria-valuemin="0" aria-valuemax="100" style="width:60%">
-												<span>60%</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-									<div class="progress-wrap">
-										<h3>S3 Object storage</h3>
-										<div class="progress">
-											<div class="progress-bar color-4" role="progressbar" aria-valuenow="75"
-												aria-valuemin="0" aria-valuemax="100" style="width:75%">
-												<span>75%</span>
-											</div>
-										</div>
-									</div>
-									<br>
-								</div>
-								<br>
-							<!-- Data Ingest -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Data Ingest</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>RabbitMQ</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="65"
-											aria-valuemin="0" aria-valuemax="100" style="width:65%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<!-- Data Search and Analytics -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Data Search and Analytics</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>ElasticSearch</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:75%">
-											<span>75%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Kibana</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Statistical Analysis &amp; Data Visualization</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>JMP</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" aria-label="JMP" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<!-- Graphic Design -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Graphic Design Programs</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Adobe Photoshop</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Adobe Illustrator</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Gimp</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<!-- Wireframing -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Wireframe Programs</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Adobe XD</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Balsamiq</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="65"
-											aria-valuemin="0" aria-valuemax="100" style="width:65%">
-											<span>65%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Figma</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<!-- Game development -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Game Development</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Unity</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<!-- Productivity Programs -->
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Productivity Programs</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>JIRA</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Microsoft Office</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Microsoft Teams</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Miro board</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>RocketChat</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Slack</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="progress-wrap">
-									<h3>Trello</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-						</div>
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Modeling &amp; Simulation</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>AnyLogic</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" aria-label="AnyLogic" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-							<br>
-							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
-								<h2 class="colorlib-heading animate-box">Systems Engineering &amp; MBSE</h2>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Capella</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="60"
-											aria-valuemin="0" aria-valuemax="100" aria-label="Capella" style="width:60%">
-											<span>60%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Magic Systems of Systems Architect</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
-											 aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="progress-wrap">
-									<h3>Model Center</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											 aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-								<br>
-							</div>
-						</div>
+						<div class="skill-groups">
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">AI Tools</h3>
+<span class="skill-group-count">4 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Codex</h4>
+<div class="progress">
+<div aria-label="Codex" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-1" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Copilot</h4>
+<div class="progress">
+<div aria-label="Copilot" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-2" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Devin</h4>
+<div class="progress">
+<div aria-label="Devin" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-3" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Windsurf</h4>
+<div class="progress">
+<div aria-label="Windsurf" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-4" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Cloud Computing</h3>
+<span class="skill-group-count">2 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>OpenShift</h4>
+<div class="progress">
+<div aria-label="OpenShift" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-5" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>S3 Object storage</h4>
+<div class="progress">
+<div aria-label="S3 Object storage" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-6" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Data Ingest</h3>
+<span class="skill-group-count">1 skill</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>RabbitMQ</h4>
+<div class="progress">
+<div aria-label="RabbitMQ" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" class="progress-bar color-1" role="progressbar" style="width:65%">
+<span>60%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Data Search and Analytics</h3>
+<span class="skill-group-count">2 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>ElasticSearch</h4>
+<div class="progress">
+<div aria-label="ElasticSearch" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-2" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Kibana</h4>
+<div class="progress">
+<div aria-label="Kibana" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" class="progress-bar color-3" role="progressbar" style="width:85%">
+<span>85%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Database</h3>
+<span class="skill-group-count">6 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>MongoDB</h4>
+<div class="progress">
+<div aria-label="MongoDB" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-4" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>mySQL</h4>
+<div class="progress">
+<div aria-label="mySQL" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>PostgreSQL</h4>
+<div class="progress">
+<div aria-label="PostgreSQL" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" class="progress-bar color-6" role="progressbar" style="width:65%">
+<span>65%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SQL Server 2019</h4>
+<div class="progress">
+<div aria-label="SQL Server 2019" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-1" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SQL Workbench</h4>
+<div class="progress">
+<div aria-label="SQL Workbench" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-2" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SQLlite</h4>
+<div class="progress">
+<div aria-label="SQLlite" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-3" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Developer Tools</h3>
+<span class="skill-group-count">11 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>AWS EC2</h4>
+<div class="progress">
+<div aria-label="AWS EC2" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-4" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Azure Dev Ops</h4>
+<div class="progress">
+<div aria-label="Azure Dev Ops" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-5" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Docker</h4>
+<div class="progress">
+<div aria-label="Docker" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-6" role="progressbar" style="width:80%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Github</h4>
+<div class="progress">
+<div aria-label="Github" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-1" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>GitLab</h4>
+<div class="progress">
+<div aria-label="GitLab" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-2" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>JetBrains</h4>
+<div class="progress">
+<div aria-label="JetBrains" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-3" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Mermaid</h4>
+<div class="progress">
+<div aria-label="Mermaid" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-4" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>PgAdmin</h4>
+<div class="progress">
+<div aria-label="PgAdmin" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Postman</h4>
+<div class="progress">
+<div aria-label="Postman" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-6" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Swagger</h4>
+<div class="progress">
+<div aria-label="Swagger" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Visual Studio Code</h4>
+<div class="progress">
+<div aria-label="Visual Studio Code" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="progress-bar color-2" role="progressbar" style="width:90%">
+<span>90%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Frameworks</h3>
+<span class="skill-group-count">12 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Angular</h4>
+<div class="progress">
+<div aria-label="Angular" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-3" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>AngularJS</h4>
+<div class="progress">
+<div aria-label="AngularJS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-4" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>ASP.net</h4>
+<div class="progress">
+<div aria-label="ASP.net" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-5" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Django</h4>
+<div class="progress">
+<div aria-label="Django" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-6" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Entity Framework (EF) Core</h4>
+<div class="progress">
+<div aria-label="Entity Framework (EF) Core" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-1" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Express</h4>
+<div class="progress">
+<div aria-label="Express" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-2" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>FastAPI</h4>
+<div class="progress">
+<div aria-label="FastAPI" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-3" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Flask</h4>
+<div class="progress">
+<div aria-label="Flask" aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar color-4" role="progressbar" style="width:45%">
+<span>45%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>NestJS</h4>
+<div class="progress">
+<div aria-label="NestJS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-5" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Nodejs</h4>
+<div class="progress">
+<div aria-label="Nodejs" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-6" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SharePoint Framework (SPFx)</h4>
+<div class="progress">
+<div aria-label="SharePoint Framework (SPFx)" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-1" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SQLAlchemy</h4>
+<div class="progress">
+<div aria-label="SQLAlchemy" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-2" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Front End Libraries</h3>
+<span class="skill-group-count">9 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Ajax</h4>
+<div class="progress">
+<div aria-label="Ajax" aria-valuemax="100" aria-valuemin="0" aria-valuenow="45" class="progress-bar color-3" role="progressbar" style="width:45%">
+<span>45%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Bootstrap</h4>
+<div class="progress">
+<div aria-label="Bootstrap" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-4" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>jQuery</h4>
+<div class="progress">
+<div aria-label="jQuery" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Kendo UI</h4>
+<div class="progress">
+<div aria-label="Kendo UI" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-6" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Leaflet</h4>
+<div class="progress">
+<div aria-label="Leaflet" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Mongoose</h4>
+<div class="progress">
+<div aria-label="Mongoose" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-2" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>React</h4>
+<div class="progress">
+<div aria-label="React" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-3" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>SocketIO</h4>
+<div class="progress">
+<div aria-label="SocketIO" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar color-4" role="progressbar" style="width:40%">
+<span>40%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Yeoman</h4>
+<div class="progress">
+<div aria-label="Yeoman" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Game Development</h3>
+<span class="skill-group-count">1 skill</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Unity</h4>
+<div class="progress">
+<div aria-label="Unity" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-6" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Graphic Design Programs</h3>
+<span class="skill-group-count">3 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Adobe Illustrator</h4>
+<div class="progress">
+<div aria-label="Adobe Illustrator" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Adobe Photoshop</h4>
+<div class="progress">
+<div aria-label="Adobe Photoshop" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-2" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Gimp</h4>
+<div class="progress">
+<div aria-label="Gimp" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-3" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Languages</h3>
+<span class="skill-group-count">7 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>C#</h4>
+<div class="progress">
+<div aria-label="C#" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-4" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>CSS</h4>
+<div class="progress">
+<div aria-label="CSS" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" class="progress-bar color-5" role="progressbar" style="width:90%">
+<span>90%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>HTML5</h4>
+<div class="progress">
+<div aria-label="HTML5" aria-valuemax="100" aria-valuemin="0" aria-valuenow="85" class="progress-bar color-6" role="progressbar" style="width:85%">
+<span>85%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Javascript (ES5 and ES6)</h4>
+<div class="progress">
+<div aria-label="Javascript (ES5 and ES6)" aria-valuemax="100" aria-valuemin="0" aria-valuenow="75" class="progress-bar color-1" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Python</h4>
+<div class="progress">
+<div aria-label="Python" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-2" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Sass</h4>
+<div class="progress">
+<div aria-label="Sass" aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar color-3" role="progressbar" style="width:75%">
+<span>75%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>TypeScript</h4>
+<div class="progress">
+<div aria-label="TypeScript" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-4" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Modeling &amp; Simulation</h3>
+<span class="skill-group-count">1 skill</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>AnyLogic</h4>
+<div class="progress">
+<div aria-label="AnyLogic" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-5" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Productivity Programs</h3>
+<span class="skill-group-count">7 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>JIRA</h4>
+<div class="progress">
+<div aria-label="JIRA" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-6" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Microsoft Office</h4>
+<div class="progress">
+<div aria-label="Microsoft Office" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Microsoft Teams</h4>
+<div class="progress">
+<div aria-label="Microsoft Teams" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-2" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Miro board</h4>
+<div class="progress">
+<div aria-label="Miro board" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-3" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>RocketChat</h4>
+<div class="progress">
+<div aria-label="RocketChat" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-4" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Slack</h4>
+<div class="progress">
+<div aria-label="Slack" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-5" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Trello</h4>
+<div class="progress">
+<div aria-label="Trello" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-6" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Statistical Analysis &amp; Data Visualization</h3>
+<span class="skill-group-count">1 skill</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>JMP</h4>
+<div class="progress">
+<div aria-label="JMP" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Systems Engineering &amp; MBSE</h3>
+<span class="skill-group-count">3 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Capella</h4>
+<div class="progress">
+<div aria-label="Capella" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-2" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Magic Systems of Systems Architect</h4>
+<div class="progress">
+<div aria-label="Magic Systems of Systems Architect" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-3" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Model Center</h4>
+<div class="progress">
+<div aria-label="Model Center" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-4" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Unit Testing</h3>
+<span class="skill-group-count">4 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Jasmine</h4>
+<div class="progress">
+<div aria-label="Jasmine" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Jest</h4>
+<div class="progress">
+<div aria-label="Jest" aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar color-6" role="progressbar" style="width:60%">
+<span>60%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>pytest</h4>
+<div class="progress">
+<div aria-label="pytest" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-1" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Vitest</h4>
+<div class="progress">
+<div aria-label="Vitest" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-2" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+
+</div>
+</details>
+<details class="skill-group">
+<summary>
+<h3 class="colorlib-heading skill-category">Wireframe Programs</h3>
+<span class="skill-group-count">3 skills</span>
+<span aria-hidden="true" class="skill-group-indicator"></span>
+</summary>
+<div class="skill-group-grid">
+<div class="progress-wrap">
+<h4>Adobe XD</h4>
+<div class="progress">
+<div aria-label="Adobe XD" aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar color-3" role="progressbar" style="width:80%">
+<span>80%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Balsamiq</h4>
+<div class="progress">
+<div aria-label="Balsamiq" aria-valuemax="100" aria-valuemin="0" aria-valuenow="65" class="progress-bar color-4" role="progressbar" style="width:65%">
+<span>65%</span>
+</div>
+</div>
+</div>
+<div class="progress-wrap">
+<h4>Figma</h4>
+<div class="progress">
+<div aria-label="Figma" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" class="progress-bar color-5" role="progressbar" style="width:70%">
+<span>70%</span>
+</div>
+</div>
+</div>
+</div>
+</details>
+</div>
 					</div>
 				</section>
 				<!-- Education -->
@@ -1367,7 +1150,6 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Education</span>
 								<h2 class="colorlib-heading animate-box">Education</h2>
 							</div>
 						</div>
@@ -1377,12 +1159,12 @@
 									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingOne">
-												<h4 class="panel-title">
+												<h3 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseOne" aria-expanded="true"
 														aria-controls="collapseOne">Georgia Institute of Technology
 													</a>
-												</h4>
+												</h3>
 											</div>
 											<div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingOne">
@@ -1400,12 +1182,12 @@
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingThree">
-												<h4 class="panel-title">
+												<h3 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseThree" aria-expanded="false"
 														aria-controls="collapseThree">Coding Dojo
 													</a>
-												</h4>
+												</h3>
 											</div>
 											<div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingThree">
@@ -1422,18 +1204,18 @@
 										</div>
 										<div class="panel panel-default">
 											<div class="panel-heading" role="tab" id="headingFour">
-												<h4 class="panel-title">
+												<h3 class="panel-title">
 													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
 														href="#collapseFour" aria-expanded="false"
 														aria-controls="collapseFour">George Mason University
 													</a>
-												</h4>
+												</h3>
 											</div>
 											<div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
 												aria-labelledby="headingFour">
 												<div class="panel-body">
 													<ul>
-														<li>Bachelor of Science in Decision Science and Management Information Systems, with a minor in Information Technology.</li>
+														<li>Bachelor of Science in Management Information Systems (MIS), with a minor in Information Technology.</li>
 														<li>Graduated cum laude.</li>
 														<li>Built a foundation in systems engineering, system design, system analysis, and project management.</li>
 													</ul>
@@ -1512,7 +1294,6 @@
 						<div class="row">
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">Professional Experience</span>
 								<h2 class="colorlib-heading animate-box">Work Experience</h2>
 							</div>
 						</div>
@@ -1651,7 +1432,6 @@
 						<div class="row">
 							<div class="col-md-12 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
-								<span class="heading-meta">References</span>
 								<h2 class="colorlib-heading animate-box">Professional References</h2>
 							</div>
 						</div>
@@ -1687,82 +1467,64 @@
 							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
 								data-animate-effect="fadeInLeft">
 								<span class="heading-meta">Portfolio</span>
-								<h2 class="colorlib-heading animate-box">Recent Work</h2>
+								<h2 class="colorlib-heading animate-box">Selected Work</h2>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/natours.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://ksoliven.github.io/natours-responsive-development/">Natours
-													using Advanced SASS
-												</a>
-											</h3>
-											<span>Technologies: HTML, CSS, and SASS</span>
-										</div>
-									</div>
+						<div class="portfolio-grid">
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInLeft" aria-labelledby="project-elastic-nest-title">
+								<img class="portfolio-card-image" src="images/elastic-nest.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-elastic-nest-title">Elasticsearch CRUD Guide</h3>
+									<p class="portfolio-card-summary">A C# and NEST reference for creating, updating, and deleting Elasticsearch data with Painless scripts.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>Elasticsearch</li><li>C#</li><li>NEST</li><li>Painless</li></ul>
+									<a class="portfolio-card-link" href="https://github.com/ksoliven/Elastic_NEST_Painless" target="_blank" rel="noopener noreferrer" aria-label="View code for Elasticsearch CRUD Guide (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project" style="background-image: url(images/trillo.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://ksoliven.github.io/trillo-flexbox-development/">Trillo
-													using Flexbox
-												</a></h3>
-											<span>Technologies: HTML, CSS, and SASS</span>
-										</div>
-									</div>
+							</article>
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInRight" aria-labelledby="project-nums-to-words-title">
+								<img class="portfolio-card-image" src="images/nums-to-words.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-nums-to-words-title">Numbers to Words</h3>
+									<p class="portfolio-card-summary">A TypeScript number-to-words converter designed for use as an Angular pipe.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>TypeScript</li><li>Angular</li></ul>
+									<a class="portfolio-card-link" href="https://github.com/ksoliven/NumsToWords" target="_blank" rel="noopener noreferrer" aria-label="View code for Numbers to Words (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
-								<div class="project" style="background-image: url(images/nexter.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://ksoliven.github.io/nexter-css-grid/">Nexter using CSS
-													grid</a>
-											</h3>
-											<span>Technologies: HTML, CSS, and SASS
-											</span>
-										</div>
-									</div>
+							</article>
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInLeft" aria-labelledby="project-instacart-title">
+								<img class="portfolio-card-image" src="images/instacart.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-instacart-title">Instacart Delivery Checker</h3>
+									<p class="portfolio-card-summary">A Python and Selenium script for checking available Instacart delivery times.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>Python</li><li>Selenium</li></ul>
+									<a class="portfolio-card-link" href="https://github.com/ksoliven/instacart" target="_blank" rel="noopener noreferrer" aria-label="View code for Instacart Delivery Checker (opens in a new tab)">View code <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
-								<div class="project" style="background-image: url(images/instacart.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://github.com/ksoliven/instacart">Instacart Checkout
-													Script</a></h3>
-											<span>Technologies: Python and Selenium</span>
-										</div>
-									</div>
+							</article>
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInRight" aria-labelledby="project-natours-title">
+								<img class="portfolio-card-image" src="images/natours.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-natours-title">Natours</h3>
+									<p class="portfolio-card-summary">A responsive front-end layout exploring advanced Sass techniques.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>Sass</li></ul>
+									<a class="portfolio-card-link" href="https://ksoliven.github.io/natours-responsive-development/" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Natours (opens in a new tab)">Live demo <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
-								<div class="project" style="background-image: url(images/nums-to-words.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://github.com/ksoliven/NumsToWords">Numbers To Words</a>
-											</h3>
-											<span>Technologies: Typescript and Angular.</span>
-										</div>
-									</div>
+							</article>
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInLeft" aria-labelledby="project-trillo-title">
+								<img class="portfolio-card-image" src="images/trillo.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-trillo-title">Trillo</h3>
+									<p class="portfolio-card-summary">A front-end layout demonstrating flexible page composition with CSS Flexbox.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>Sass</li><li>Flexbox</li></ul>
+									<a class="portfolio-card-link" href="https://ksoliven.github.io/trillo-flexbox-development/" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Trillo (opens in a new tab)">Live demo <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
-							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
-								<div class="project"
-									style="background-image: url(images/elastic-nest.png);">
-									<div class="desc">
-										<div class="con">
-											<h3><a href="https://github.com/ksoliven/Elastic_NEST_Painless">Elastic Nest
-													CRUD</a></h3>
-											<span>Technologies: ElasticSearch, Painless, C#, and NEST</span>
-										</div>
-									</div>
+							</article>
+							<article class="portfolio-card animate-box" data-animate-effect="fadeInRight" aria-labelledby="project-nexter-title">
+								<img class="portfolio-card-image" src="images/nexter.png" alt="" loading="lazy" decoding="async" width="640" height="360">
+								<div class="portfolio-card-body">
+									<h3 id="project-nexter-title">Nexter</h3>
+									<p class="portfolio-card-summary">A front-end layout demonstrating page composition with CSS Grid.</p>
+									<ul class="portfolio-card-tech" aria-label="Technologies"><li>HTML</li><li>CSS</li><li>Sass</li><li>CSS Grid</li></ul>
+									<a class="portfolio-card-link" href="https://ksoliven.github.io/nexter-css-grid/" target="_blank" rel="noopener noreferrer" aria-label="Live demo for Nexter (opens in a new tab)">Live demo <span aria-hidden="true">↗</span></a>
 								</div>
-							</div>
+							</article>
 						</div>
 						<div class="row">
 							<div class="col-md-12 animate-box">
@@ -1788,7 +1550,7 @@
 								<div class="blog-entry">
 									<a href="https://www.autism-society.org/get-involved/national-autism-awareness-month/"
 										class="blog-img"><img src="images/autism.jpg" class="img-responsive"
-											alt="Autism Society"></a>
+											alt="Autism Society" loading="lazy" decoding="async"></a>
 									<div class="desc">
 										<h3><a
 												href="https://www.autism-society.org/get-involved/national-autism-awareness-month/">Autism
@@ -1802,7 +1564,7 @@
 							<div class="col-md-4 col-sm-6 animate-box" data-animate-effect="fadeInRight">
 								<div class="blog-entry">
 									<a href="https://lionsclubs.org/en" class="blog-img"><img src="images/lions.png"
-											class="img-responsive" alt="Lions Clubs International"></a>
+											class="img-responsive" alt="Lions Clubs International" loading="lazy" decoding="async"></a>
 									<div class="desc">
 										<h3><a href="https://lionsclubs.org/en">Lions Club</a></h3>
 										<p>I've been involved with this organization since high school, and its mission
@@ -1835,64 +1597,27 @@
 					</div>
 				</section>
 
-				<section class="colorlib-contact" data-section="contact">
+				<section id="contact-section" class="colorlib-contact" data-section="contact">
 					<div class="colorlib-narrow-content">
 						<div class="row">
-							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-								data-animate-effect="fadeInLeft">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
 								<span class="heading-meta">Get in Touch</span>
 								<h2 class="colorlib-heading">Contact</h2>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-md-5">
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-globe-outline"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="mailto:katedevdc@gmail.com">Send me an email</a></p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-map"></i>
-									</div>
-									<div class="colorlib-text">
-										<p>Washington, DC</p>
-									</div>
-								</div>
-
-								<div class="colorlib-feature colorlib-feature-sm animate-box"
-									data-animate-effect="fadeInLeft">
-									<div class="colorlib-icon">
-										<i class="icon-phone"></i>
-									</div>
-									<div class="colorlib-text">
-										<p><a href="tel:+14106932722">Give me a call</a></p>
-									</div>
-								</div>
-							</div>
-							<!-- Implemented Captcha and Emailjs library -->
-							<div class="col-md-7">
-								<div class="row">
-									<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
-										data-animate-effect="fadeInRight">
-										<form action="?" method="POST" id="contact-form">
+						<div class="contact-form-wrap animate-box" data-animate-effect="fadeInUp">
+							<form action="?" method="POST" id="contact-form">
 											<div class="form-group">
 												<input type="hidden" name="contact_number">
-												<input type="text" name="user_name" id="user_name" class="form-control"
+												<input type="text" name="user_name" id="user_name" maxlength="100" class="form-control"
 													placeholder="Name" autocomplete="name" aria-label="Name" required>
 											</div>
 											<div class="form-group">
-												<input type="email" name="user_email" id="user_email"
+												<input type="email" name="user_email" id="user_email" maxlength="254"
 													class="form-control" placeholder="Email" autocomplete="email" aria-label="Email" required>
 											</div>
 											<div class="form-group">
-												<textarea name="message" id="message" cols="30" rows="7"
+												<textarea name="message" id="message" cols="30" rows="7" maxlength="3000"
 													class="form-control" placeholder="Message" aria-label="Message" required></textarea>
 											</div>
 											<div class="form-group">
@@ -1904,10 +1629,6 @@
 												data-sitekey="6LcP1cApAAAAAPOX01gNTbOXqKM_mzJlJOPDDJB8"></div>
 											<p id="contact-status" class="sr-only" role="status" aria-live="polite"></p>
 										</form>
-									</div>
-
-								</div>
-							</div>
 						</div>
 					</div>
 				</section>
@@ -1923,6 +1644,13 @@
 										src="images/svgs/cherry-blossom-svgrepo-com.svg" alt=""></span>
 							</p>
 							<p class="site-signature-quote">where ideas come into bloom</p>
+							<nav class="site-footer-links" aria-label="Footer resources">
+								<a href="documents/ksoliven.pdf" target="_blank" rel="noopener noreferrer">Résumé</a>
+								<a href="https://github.com/ksoliven" target="_blank" rel="noopener noreferrer">GitHub</a>
+								<a href="https://www.linkedin.com/in/kate-soliven-949706100" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+								<a href="#contact-section" data-nav-section="contact">Contact</a>
+							</nav>
+							<p class="site-footer-copyright"><small>&copy; <span id="copyright-year"></span> Kate Soliven. All rights reserved.</small></p>
 						</div>
 					</div>
 				</footer>
@@ -1943,19 +1671,16 @@
 	<script src="js/jquery.waypoints.min.js"></script>
 	<!-- Flexslider -->
 	<script src="js/jquery.flexslider-min.js"></script>
-	<!-- Owl carousel -->
-	<script src="js/owl.carousel.min.js"></script>
 	<!-- Counters -->
 	<script src="js/jquery.countTo.js"></script>
 	<!-- MAIN JS -->
-	<script src="js/main.js?v=20261029-nav2"></script>
+	<script src="js/main.js?v=20261103-skill-motion2"></script>
+	<!-- Motion mini section reveals -->
+	<script type="module" src="js/reveals.js?v=20261103-stagger"></script>
 	<!-- Vanilla toast js -->
 	<script src="js/index.var.js"></script>
-	<!-- Hover -->
-	<script src="js/hover.js"></script>
 	<!-- Captcha -->
-	<script src="js/contact.js?v=20261029-3"></script>
-	<script src="https://www.google.com/recaptcha/api.js?onload=onContactCaptchaReady&amp;render=explicit" async defer></script>
+	<script src="js/contact.js?v=20261103-abuse-controls"></script>
 
 
 	<aside class="portfolio-chat" aria-label="Portfolio assistant" hidden>
@@ -1989,7 +1714,7 @@
 		</section>
 		<button class="chat-toggle" type="button" aria-expanded="false" aria-controls="portfolio-chat-panel">Ask about Kate</button>
 	</aside>
-	<script src="js/chat.js?v=20261029-6" defer></script>
+	<script src="js/chat.js?v=20261103-abuse-controls" defer></script>
 
 </body>
 

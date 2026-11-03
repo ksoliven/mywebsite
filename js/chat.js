@@ -129,7 +129,7 @@
       }
       addMessage('assistant', reply);
     } catch (error) {
-      var failure = error.message === 'rate-limit' ? 'Too many questions. Please wait a minute before trying again.' :
+      var failure = error.message === 'rate-limit' ? 'Chat is receiving too many requests. Please wait a minute before trying again.' :
         error.message === 'verification' ? 'Verification failed. Please complete the new check and try again.' :
         'Chat is unavailable right now. Please try again or use the contact link below.';
       addMessage('assistant', failure);

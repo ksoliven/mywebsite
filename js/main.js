@@ -46,46 +46,6 @@
 		}
 	};
 
-	// Animations
-	var contentWayPoint = function() {
-		if (compactLayout.matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-			$('.animate-box').addClass('animated');
-			return;
-		}
-		var i = 0;
-		$('.animate-box').waypoint( function( direction ) {
-
-			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
-				i++;
-
-				$(this.element).addClass('item-animate');
-				setTimeout(function(){
-
-					$('body .animate-box.item-animate').each(function(k){
-						var el = $(this);
-						setTimeout( function () {
-							var effect = el.data('animate-effect');
-							if ( effect === 'fadeIn') {
-								el.addClass('fadeIn animated');
-							} else if ( effect === 'fadeInLeft') {
-								el.addClass('fadeInLeft animated');
-							} else if ( effect === 'fadeInRight') {
-								el.addClass('fadeInRight animated');
-							} else {
-								el.addClass('fadeInUp animated');
-							}
-
-							el.removeClass('item-animate');
-						},  k * 200, 'easeInOutExpo' );
-					});
-					
-				}, 100);
-				
-			}
-
-		} , { offset: '85%' } );
-	};
 
 
 	var burgerMenu = function() {
@@ -118,6 +78,7 @@
 		var section = document.querySelector('[data-section="' + sectionName + '"]');
 		if (!section) return false;
 		section.classList.add('section-open-immediately');
+		document.dispatchEvent(new CustomEvent('portfolio:reveal', { detail: { section: section } }));
 		$(section).find('.animate-box').removeClass('item-animate').addClass('animated');
 		$('html, body').stop(true);
 		setMenuOpen(false);
@@ -141,7 +102,7 @@
 
 	var clickMenu = function() {
 
-		$('#navbar a:not([class="external"])').click(function(event){
+		$('#navbar a:not([class="external"]), .site-footer-links a[data-nav-section]').click(function(event){
 			var section = $(this).data('nav-section');
 
 			openSection(section);
@@ -284,35 +245,40 @@
 
 	};
 
-	var owlCrouselFeatureSlide = function() {
-		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:true,
-		   dots: false,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		})
+	// Expanding skills changes the positions cached by the section navigation.
+	var refreshSkillsNavigation = function() {
+		var refreshFrame;
+		var refresh = function() {
+			cancelAnimationFrame(refreshFrame);
+			refreshFrame = requestAnimationFrame(function() {
+				if (window.Waypoint) window.Waypoint.refreshAll();
+			});
+		};
+		document.querySelectorAll('.skill-group').forEach(function(group) {
+			group.addEventListener('toggle', refresh);
+		});
+		var skills = document.querySelector('.skill-groups');
+		if (skills && window.ResizeObserver) {
+			var resizeTimer;
+			new ResizeObserver(function() {
+				clearTimeout(resizeTimer);
+				resizeTimer = setTimeout(refresh, 80);
+			}).observe(skills);
+		}
 	};
 
 	// Document on load.
 	$(function(){
+		$('#copyright-year').text(new Date().getFullYear());
 		fullHeight();
 		counter();
 		counterWayPoint();
-		contentWayPoint();
 		burgerMenu();
 
 		clickMenu();
 		// navActive();
 		navigationSection();
+		refreshSkillsNavigation();
 		// windowScroll();
 
 
@@ -320,7 +286,6 @@
 		sliderMain();
 		themeSwitch();
 		stickyFunction();
-		owlCrouselFeatureSlide();
 	});
 
 

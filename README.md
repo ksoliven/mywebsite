@@ -29,7 +29,7 @@ python3 -m http.server 8000
 
 Open [localhost:8000](http://localhost:8000). The site loads its CSS directly; no frontend build step is required.
 
-Chatbot backend setup is documented in [worker/README.md](worker/README.md). Secrets stay in Cloudflare or Git-ignored local files.
+Chatbot backend setup is documented in [worker/README.md](worker/README.md). A general security overview is available in [SECURITY.md](SECURITY.md). Secrets stay in Cloudflare or Git-ignored local files.
 
 ## Credits
 

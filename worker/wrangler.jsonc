@@ -5,14 +5,29 @@
   "preview_urls": false,
   "observability": {
     "enabled": true,
-    "logs": { "enabled": true }
+    "logs": {
+      "enabled": true
+    }
   },
-  "ai": { "binding": "AI" },
+  "ai": {
+    "binding": "AI"
+  },
   "ratelimits": [
     {
       "name": "CHAT_RATE_LIMITER",
       "namespace_id": "1001",
-      "simple": { "limit": 10, "period": 60 }
+      "simple": {
+        "limit": 10,
+        "period": 60
+      }
+    },
+    {
+      "name": "CHAT_AI_RATE_LIMITER",
+      "namespace_id": "1002",
+      "simple": {
+        "limit": 30,
+        "period": 60
+      }
     }
   ]
 }
