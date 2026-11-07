@@ -2089,155 +2089,94 @@ html[data-theme="night"] .petal {
   }
 }
 
-/* Native disclosures keep the long skills list easy to browse by keyboard or touch. */
-.skills-hint {
-  margin: 0 0 24px;
-  font-size: 13px;
-}
-
-.skill-group {
-  border-bottom: 1px solid var(--theme-line);
-}
-
-.skill-group:first-child {
+/* Consistent rows give every category the same alignment and spacing. */
+.skill-groups {
   border-top: 1px solid var(--theme-line);
 }
 
-.skill-group > summary {
+.skill-group {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto 24px;
-  gap: 12px;
-  align-items: center;
-  min-height: 56px;
-  padding: 16px 2px;
-  cursor: pointer;
-  list-style: none;
-}
-
-.skill-group > summary::-webkit-details-marker {
-  display: none;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--theme-line);
 }
 
 #colorlib-main .skill-group .skill-category {
-  margin: 0;
+  margin: 5px 0 0;
+  font-family: "Quicksand", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 1.6;
-}
-
-.skill-group-count {
-  color: var(--theme-text);
-  font-size: 12px;
-  white-space: nowrap;
-}
-
-.skill-group-indicator {
-  color: var(--theme-accent-strong);
-  font-size: 22px;
-  line-height: 1;
-  text-align: center;
-}
-
-.skill-group-indicator {
-  position: relative;
-  display: block;
-  width: 22px;
-  height: 22px;
-}
-
-.skill-group-indicator::before,
-.skill-group-indicator::after {
-  content: "";
-  position: absolute;
-  top: 10px;
-  left: 5px;
-  width: 12px;
-  height: 2px;
-  border-radius: 1px;
-  background: currentColor;
-}
-
-.skill-group-indicator::after {
-  transform: rotate(90deg) scaleX(1);
-}
-
-.skill-group[open] > summary .skill-group-indicator::after {
-  transform: rotate(90deg) scaleX(0);
-}
-
-.skill-group > summary:focus-visible {
-  outline: 2px solid var(--theme-accent);
-  outline-offset: 3px;
-  border-radius: 3px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--theme-heading);
 }
 
 .skill-group-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px 30px;
-  padding: 12px 2px 20px;
-}
-
-.skill-group-grid .progress-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   min-width: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.skill-group-grid .progress-wrap h4 {
-  margin: 0 0 10px;
-  padding-right: 52px;
-  font-family: "Quicksand", Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+.skill-group-grid .skill-tag {
+  max-width: 100%;
+  padding: 5px 10px;
+  margin: 0;
+  border-radius: 5px;
+  background: var(--theme-line);
   color: var(--theme-text);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
 }
 
 @media (max-width: 600px) {
-  .skill-group > summary {
-    gap: 8px;
-    grid-template-columns: minmax(0, 1fr) auto 20px;
+  .skill-group {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    padding: 20px 0;
   }
 
-  .skill-group-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 8px;
-  }
+  #colorlib-main .skill-group .skill-category { margin-top: 0; }
 }
+
+/* Crossfade whole themes, including gradients that cannot interpolate directly. */
+html.theme-crossfade::view-transition-old(root),
+html.theme-crossfade::view-transition-new(root) {
+  animation-duration: 500ms;
+  animation-timing-function: ease-in-out;
+  mix-blend-mode: normal;
+}
+
+html.theme-crossfade::view-transition-old(root) { animation: none; opacity: 1; }
+html.theme-crossfade::view-transition-new(root) { animation-name: theme-fade-in; }
+
+html.theme-crossfade *,
+html.theme-crossfade *::before,
+html.theme-crossfade *::after {
+  transition: none !important;
+}
+
+@keyframes theme-fade-in { from { opacity: 0; } }
 
 @media (prefers-reduced-motion: no-preference) {
-  .skill-group-indicator::after {
-    transition: transform 0.22s var(--motion-emphasis);
-  }
-
-  .skill-group[open] > .skill-group-grid {
-    animation: skills-content-in 0.26s ease-out;
-  }
-
-  @supports (interpolate-size: allow-keywords) and selector(details::details-content) {
-    .skill-group {
-      interpolate-size: allow-keywords;
-    }
-
-    .skill-group::details-content {
-      height: 0;
-      opacity: 0;
-      overflow: clip;
-      transition: height 0.34s var(--motion-emphasis),
-                  opacity 0.24s ease,
-                  content-visibility 0.34s allow-discrete;
-    }
-
-    .skill-group[open]::details-content {
-      height: auto;
-      opacity: 1;
-    }
-
-    .skill-group[open] > .skill-group-grid {
-      animation: none;
-    }
+  html.theme-color-fade *,
+  html.theme-color-fade *::before,
+  html.theme-color-fade *::after {
+    transition: color 500ms ease, background-color 500ms ease,
+                border-color 500ms ease, box-shadow 500ms ease;
   }
 }
 
-@keyframes skills-content-in {
-  from { opacity: 0; transform: translateY(-4px); }
-  to { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) {
+  .theme-switch, .theme-switch *, .theme-switch::before { transition: none !important; }
 }
 
 .contact-form-wrap {

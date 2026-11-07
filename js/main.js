@@ -203,9 +203,31 @@
 
 		setTheme(root.getAttribute('data-theme') || 'blossom');
 
+		var changingTheme = false;
 		button.addEventListener('click', function() {
+			if (changingTheme) return;
 			var nextTheme = root.getAttribute('data-theme') === 'night' ? 'blossom' : 'night';
-			setTheme(nextTheme);
+			if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+				setTheme(nextTheme);
+				return;
+			}
+			changingTheme = true;
+			if (document.startViewTransition) {
+				// Blend complete frames so gradients and text change together.
+				root.classList.add('theme-crossfade');
+				var transition = document.startViewTransition(function() { setTheme(nextTheme); });
+				transition.finished.catch(function() {}).finally(function() {
+					root.classList.remove('theme-crossfade');
+					changingTheme = false;
+				});
+			} else {
+				root.classList.add('theme-color-fade');
+				setTheme(nextTheme);
+				window.setTimeout(function() {
+					root.classList.remove('theme-color-fade');
+					changingTheme = false;
+				}, 500);
+			}
 		});
 	};
 
@@ -245,7 +267,7 @@
 
 	};
 
-	// Expanding skills changes the positions cached by the section navigation.
+	// Keep section navigation in sync when the responsive skills layout changes.
 	var refreshSkillsNavigation = function() {
 		var refreshFrame;
 		var refresh = function() {
@@ -254,9 +276,6 @@
 				if (window.Waypoint) window.Waypoint.refreshAll();
 			});
 		};
-		document.querySelectorAll('.skill-group').forEach(function(group) {
-			group.addEventListener('toggle', refresh);
-		});
 		var skills = document.querySelector('.skill-groups');
 		if (skills && window.ResizeObserver) {
 			var resizeTimer;

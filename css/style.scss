@@ -1759,3 +1759,35 @@ margin-left: -20px;
 		opacity: 0;
 	}
 }
+
+/* Keep expertise cards aligned even when their text wraps to different heights. */
+.colorlib-services .expertise-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 80px 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.colorlib-services .expertise-grid::before,
+.colorlib-services .expertise-grid::after {
+  display: none;
+}
+
+.colorlib-services .expertise-grid > .col-md-4 {
+  float: none;
+  width: auto;
+  padding: 0;
+  display: flex;
+}
+
+.colorlib-services .expertise-grid .services {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .colorlib-services .expertise-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
