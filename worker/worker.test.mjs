@@ -37,7 +37,11 @@ test('verification must succeed and match hostname and action before AI runs', a
   const previousFetch = globalThis.fetch;
   const env = environment();
   let aiCalls = 0;
-  env.AI.run = async () => { aiCalls++; return { response: 'A portfolio answer.' }; };
+  env.AI.run = async (model) => {
+    aiCalls++;
+    assert.equal(model, '@cf/google/gemma-4-26b-a4b-it');
+    return { choices: [{ message: { content: 'A portfolio answer.' } }] };
+  };
   try {
     for (const verification of [
       { success: false },

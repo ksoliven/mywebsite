@@ -117,16 +117,18 @@ export default {
       // This sheds bursts; the binding is approximate, not a global spending cap.
       const aiLimit = await env.CHAT_AI_RATE_LIMITER.limit({ key: 'portfolio-chat' });
       if (!aiLimit.success) return json({ error: 'Chat is busy. Please try again in a minute.' }, 429, { 'Retry-After': '60' });
-      const result = await env.AI.run('@cf/meta/llama-3.1-8b-instruct-fp8', {
+      const result = await env.AI.run('@cf/google/gemma-4-26b-a4b-it', {
         messages: [
           { role: 'system', content: `You are Kate's portfolio assistant. Answer in plain text in at most three short sentences using only the facts below. If details are missing, say you don't know and suggest contacting Kate. Never invent qualifications, availability, salary, or project details. Politely decline unrelated requests.\n${FACTS}` },
           { role: 'user', content: data.message.trim() }
         ],
-        max_tokens: 200,
+        max_completion_tokens: 200,
+        chat_template_kwargs: { enable_thinking: false },
         temperature: 0.2
       });
-      if (typeof result.response !== 'string' || !result.response.trim()) return json({ error: 'No answer available.' }, 502);
-      return json({ reply: result.response });
+      const reply = result?.choices?.[0]?.message?.content;
+      if (typeof reply !== 'string' || !reply.trim()) return json({ error: 'No answer available.' }, 502);
+      return json({ reply });
     } catch (error) {
       if (error instanceof RequestError) return json({ error: error.message }, error.status);
       return json({ error: 'Chat is temporarily unavailable.' }, 503);
