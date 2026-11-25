@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cracked",
+    "label": "Panel A",
+    "image": "./panel-a.jpg",
+    "alt": "Concrete surface with a visible hairline crack",
+    "detections": [
+      {
+        "id": "crack",
+        "label": "Surface crack",
+        "bounds": { "left": 45, "top": 2, "width": 10, "height": 96 }
+      }
+    ]
+  },
+  {
+    "id": "clear",
+    "label": "Panel B",
+    "image": "./panel-b.jpg",
+    "alt": "Concrete surface with no visible damage",
+    "detections": []
+  }
+]

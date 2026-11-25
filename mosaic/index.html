@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A sample gesture-to-speech demo for MOSAIC.">
+  <title>MOSAIC | Gesture to Speech</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="demo.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container"><a href="../#selected-work">Back to portfolio</a></div>
+  </header>
+  <main class="container">
+    <div class="overview">
+      <div class="overview-copy">
+        <h1>MOSAIC</h1>
+        <p class="subtitle">Hand gestures to speech</p>
+        <p class="intro">An assistive communication case study exploring how hand gestures could help nonspeaking individuals express everyday messages.</p>
+      </div>
+      <img src="../images/mosaic.jpg" alt="A thumbs-up gesture beside a tablet displaying an audio waveform" width="960" height="540">
+    </div>
+
+    <div class="demo">
+      <section class="panel" aria-labelledby="gestures-heading">
+        <h2 id="gestures-heading">Choose a gesture</h2>
+        <p class="instructions">Select a sample to simulate recognition and hear its phrase.</p>
+        <div class="gestures">
+          <button type="button" data-phrase="Hello!" disabled>
+            <span aria-hidden="true">👋</span> Wave
+          </button>
+          <button type="button" data-phrase="Yes." disabled>
+            <span aria-hidden="true">👍</span> Thumbs up
+          </button>
+          <button type="button" data-phrase="No." disabled>
+            <span aria-hidden="true">👎</span> Thumbs down
+          </button>
+        </div>
+      </section>
+
+      <section class="panel output" aria-labelledby="output-heading">
+        <h2 id="output-heading">Spoken phrase</h2>
+        <p id="phrase" role="status" aria-atomic="true">Waiting for a gesture</p>
+        <p id="speech-status" role="status" hidden></p>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Watchtower | Inspection Review</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="review.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../#selected-work"><span aria-hidden="true">←</span> Back to portfolio</a>
+    </div>
+  </header>
+  <main>
+    <div class="page-heading">
+      <h1>Watchtower</h1>
+      <p class="intro">Review potential defects on sample concrete inspection images.</p>
+    </div>
+    <div class="review-layout">
+      <section class="panel" aria-labelledby="inspection-heading">
+        <div class="panel-header inspection-header">
+          <h2 id="inspection-heading">Inspection image</h2>
+          <div class="sample-picker">
+            <label for="inspection">Sample</label>
+            <select id="inspection" disabled></select>
+          </div>
+        </div>
+        <div id="inspection-frame" class="inspection-frame" hidden>
+          <img id="inspection-image" width="768" height="384" alt="">
+          <div id="overlays" class="overlays"></div>
+        </div>
+        <p id="load-status" role="status">Loading sample inspections…</p>
+      </section>
+      <section class="panel findings" aria-labelledby="findings-heading">
+        <div class="panel-header">
+          <h2 id="findings-heading">Findings</h2>
+          <p id="findings-summary" role="status"></p>
+        </div>
+        <ul id="findings" aria-label="Detected defects"></ul>
+        <div id="review-actions" class="review-actions" hidden>
+          <button type="button" id="confirm">Confirm</button>
+          <button type="button" id="dismiss">Dismiss</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
